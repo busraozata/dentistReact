@@ -1,0 +1,142 @@
+@import "../../Styles/variables.scss";
+footer {
+    background-color: var(--color-gray);
+    padding: 4rem 0rem 0rem 0rem;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(sm) {
+        padding: 2rem 1rem 0rem 1rem;
+    }
+
+    &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.822);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .row-area {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+
+        @include breakpoint(lg) {
+            flex-wrap: wrap-reverse;
+        }
+
+        .col-area {
+            flex: 0 0 20%;
+
+            @include breakpoint(lg) {
+                flex: 0 0 50%;
+            }
+
+            @include breakpoint(sm) {
+                flex: 0 0 100%;
+            }
+
+            h3 {
+                color: var(--color-light-blue);
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 1.4rem;
+                display: inline-block;
+                padding-bottom: 0.3rem;
+                border-bottom: 2px solid var(--color-light-blue);
+
+                @include breakpoint(xl) {
+                    font-size: 1rem;
+                }
+            }
+
+            img {
+                filter: brightness(0) invert(1);
+                margin-bottom: 1rem;
+
+                @include breakpoint(sm) {
+                    max-width: 9rem;
+                }
+            }
+
+            p {
+                color: var(--color-white);
+                font-weight: 400;
+                font-size: 1rem;
+
+                @include breakpoint(xl) {
+                    font-size: 0.8rem;
+                }
+                i {
+                    margin-right: 0.3rem;
+                }
+            }
+
+            ul {
+                li {
+                    margin-bottom: 0.3rem;
+
+                    a {
+                        color: var(--color-white);
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                        transition: 0.3s all;
+
+                        @include breakpoint(xl) {
+                            font-size: 0.8rem;
+                        }
+
+                        i {
+                            margin-right: 0.3rem;
+                            transition: 0.3s all;
+                        }
+
+                        &:hover {
+                            color: var(--color-light-blue);
+
+                            i {
+                                margin-right: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact {
+                li {
+                    a {
+                        color: var(--color-white);
+                        transition: 0.3s all;
+
+                        &:hover {
+                            color: var(--color-gray-text);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        border-top: 1px solid rgba(255, 255, 255, 0.253);
+        padding: 0.5rem 0rem;
+        margin-top: 2rem;
+
+        span {
+            font-size: 0.7rem;
+            color: var(--color-white);
+            font-weight: 500;
+        }
+
+        img {
+            max-width: 2rem;
+        }
+    }
+}

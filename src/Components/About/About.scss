@@ -1,0 +1,112 @@
+@import "../../Styles/variables.scss";
+@import "../../Styles/mixin.scss";
+.about-page {
+    .content {
+        padding-left: 1rem;
+
+        @include breakpoint(lg) {
+            padding-left: 0rem;
+            margin-top: 2rem;
+        }
+
+        h2,
+        h3 {
+            @include h3;
+        }
+
+        p {
+            color: var(--color-gray-text);
+            font-weight: 400;
+            font-size: 1rem;
+
+            @include breakpoint(lg) {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+.parallax {
+    padding: 5rem 2rem;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed !important;
+
+    @include breakpoint(lg) {
+        padding: 3rem 1rem;
+    }
+
+    &:before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.452);
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .img-wrapper {
+        @include breakpoint(lg) {
+            margin-bottom: 2rem;
+        }
+
+        img {
+            @include breakpoint(xl) {
+                max-width: 40rem;
+            }
+        }
+    }
+
+    h3 {
+        color: var(--color-white);
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.3rem;
+
+        @include breakpoint(lg) {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        color: var(--color-white);
+        font-weight: 500;
+        font-size: 1rem;
+
+        @include breakpoint(lg) {
+            font-size: 0.9rem;
+        }
+    }
+
+    .button-area {
+        @include breakpoint(lg) {
+            margin-top: 2rem;
+        }
+
+        .button {
+            @include button;
+        }
+    }
+
+    a {
+        color: var(--color-white);
+        font-size: 1.3rem;
+        font-weight: 500;
+
+        &:hover {
+            i {
+                margin-right: 1rem;
+            }
+        }
+
+        i {
+            margin-right: 0.5rem;
+            transition: 0.3s all;
+        }
+    }
+}

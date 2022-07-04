@@ -1,0 +1,144 @@
+@import "../../../Styles/variables.scss";
+@import "../../../Styles/mixin.scss";
+.blog {
+    padding: 3rem 0rem 3rem 0rem;
+    position: relative;
+    background-color: var(--white);
+
+    @include breakpoint(lg) {
+        padding: 2rem 0rem;
+    }
+
+    .title {
+        h6 {
+            @include h6;
+        }
+
+        h3 {
+            @include h3;
+        }
+
+        .button-area {
+            @include breakpoint(lg) {
+                margin-top: 2rem;
+            }
+
+            .button {
+                @include button;
+                color: var(--color-light-blue);
+                border-color: var(--color-light-blue);
+
+                &::before,
+                &::after {
+                    border-color: var(--color-light-blue);
+                }
+
+                @include breakpoint(lg) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .blog-area {
+        margin-top: 3rem;
+
+        .swiper {
+            @include swiper;
+
+            .swiper-slide {
+                background-color: transparent;
+
+                &:hover {
+                    span {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+
+            .card {
+                box-shadow: 2px 8px 30px rgba(35, 39, 86, 0.05);
+                border: none;
+
+                .img-wrapper {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: -14px;
+                        left: 0;
+                        right: 0;
+                        top: 26%;
+                        background: linear-gradient(0.45deg, white 12%, rgba(255, 255, 255, 0) 89.88%);
+                        pointer-events: none;
+                    }
+
+                    img {
+                        max-width: 30rem;
+                        object-fit: cover;
+                    }
+                }
+
+                .card-body {
+                    text-align: left;
+                    padding: 3rem 2rem;
+                    height: 15rem;
+
+                    @include breakpoint(lg) {
+                        padding: 2rem 1rem;
+                    }
+                    .card-title {
+                        a {
+                            color: var(--color-light-blue);
+                            font-weight: 500;
+                            font-size: 1.5rem;
+                            margin-bottom: 1rem;
+
+                            @include breakpoint(lg) {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        font-weight: 300;
+                        color: var(--color-black);
+                    }
+
+                    .button-area {
+                        margin-top: 1rem;
+
+                        .button {
+                            color: var(--color-light-blue);
+                            font-size: 1rem;
+
+                            span {
+                                transition: 0.3s all;
+                            }
+
+                            @include breakpoint(lg) {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            top: 2rem;
+            color: var(--color-gray-text);
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            top: 2rem;
+            left: auto;
+            right: 3rem;
+            color: var(--color-gray-text);
+        }
+    }
+}

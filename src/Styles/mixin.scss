@@ -1,0 +1,341 @@
+@import "./variables.scss";
+@mixin button {
+    position: relative;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 0;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        border: 2px solid var(--color-white);
+        width: 1em;
+        height: 1em;
+        transition: all 0.3s ease-in-out;
+        z-index: 5;
+    }
+
+    &:before {
+        top: -6px;
+        left: -6px;
+        border-width: 2px 0 0 2px;
+    }
+
+    &:after {
+        bottom: -6px;
+        right: -6px;
+        border-width: 0 2px 2px 0;
+    }
+
+    &:hover {
+        &:before,
+        &::after {
+            width: calc(100% + 12px);
+            height: calc(100% + 12px);
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+@mixin h6 {
+    color: var(--color-light-blue);
+    color: var(--color-gray-text);
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    @include breakpoint(xl) {
+        font-size: 1rem;
+    }
+}
+
+@mixin h3 {
+    color: var(--color-light-blue);
+    font-weight: 700;
+    font-size: 2.5rem;
+
+    @include breakpoint(xl) {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@mixin box {
+    &:hover {
+        .icon-box {
+            border: 2px solid var(--color-light-blue);
+        }
+    }
+
+    .icon-box {
+        height: 6rem;
+        margin-left: 0;
+        margin-right: 0;
+        width: 6rem;
+        border-radius: 50%;
+        padding: 0.5rem;
+        border: 2px solid transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s all;
+
+        img {
+            max-width: 3.5rem;
+        }
+    }
+
+    .content {
+        h3 {
+            color: var(--color-gray-text);
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin: 1.5rem 0rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--color-gray-text);
+        }
+    }
+}
+
+@mixin sidebar {
+    box-shadow: 3px 7px 23px -8px rgba(0, 0, 0, 0.42);
+    /*   height: 100%; */
+    padding: 4rem 2rem;
+    background-color: var(--color-light-blue);
+
+    position: sticky;
+    top: 0;
+
+    ul {
+        li {
+            margin-bottom: 1rem;
+
+            a {
+                color: var(--color-white);
+                font-size: 1.1rem;
+                font-weight: 500;
+
+                &.active {
+                    font-weight: 900;
+                }
+
+                @include breakpoint(lg) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@mixin before-after {
+    .twentytwenty-handle {
+        border-radius: 0;
+    }
+
+    .twentytwenty-horizontal .twentytwenty-handle:before {
+        margin-bottom: 34px;
+    }
+
+    .twentytwenty-horizontal .twentytwenty-handle:after {
+        margin-top: 34px;
+    }
+
+    .twentytwenty-handle {
+        height: 56px;
+
+        margin-top: -34px;
+    }
+}
+
+@mixin swiper-item {
+    .swiper {
+        width: 100%;
+        height: 20rem;
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: inline-block; // Browser destekleri için ilaveten kullanıyoruz
+            word-break: break-word;
+            table-layout: fixed; //
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0rem;
+
+            &::before {
+                background-color: transparent;
+            }
+
+            a {
+                width: 100%;
+                height: 100%;
+                transition: 0.3s all;
+
+                .card-img-top {
+                    max-width: 8rem;
+                    object-fit: cover;
+
+                    @media screen and(max-width:$sm-breakpoint) {
+                        max-width: 6rem;
+                    }
+                }
+
+                &:hover {
+                    span {
+                        color: var(--color-light-blue);
+                    }
+                }
+
+                span {
+                    font-size: 0.9rem;
+                    color: var(--color-gray-text);
+                    font-weight: 400;
+                    text-align: left !important;
+                    margin-left: 1rem;
+                    transition: 0.6s all;
+                }
+            }
+        }
+    }
+}
+
+@mixin card {
+    border-bottom: 1px solid var(--color-light-blue);
+    transition: 0.6s;
+    border: none;
+
+    .top {
+        position: relative;
+        overflow: hidden;
+
+        a {
+            overflow: hidden;
+
+            .card-img-top {
+                transition: 0.6s;
+
+                height: 24rem;
+            }
+        }
+
+        .icon {
+            position: absolute;
+            bottom: 1.2rem;
+            right: 1.2rem;
+            -webkit-transition: 0.6s;
+            transition: 0.6s;
+
+            a {
+                border-radius: 50%;
+                background-color: var(--color-white);
+                height: 5rem;
+                width: 5rem;
+                justify-content: center;
+                overflow: hidden;
+                display: inline-flex;
+                align-items: center;
+                box-shadow: 0px 2px 27px -10px rgba(0, 0, 0, 0.55);
+                transition: 0.6s;
+
+                @include breakpoint(lg) {
+                    height: 5rem;
+                    width: 5rem;
+                }
+
+                img {
+                    max-width: 2.6rem;
+                    z-index: 999;
+                    object-fit: cover;
+
+                    @include breakpoint(lg) {
+                        max-width: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-body {
+        padding: 2.5rem 2rem;
+        -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+        box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+        border-bottom: 1px solid var(--color-light-blue);
+        transition: 0.6s all;
+        height: 18rem;
+
+        .card-title {
+            color: var(--color-light-blue);
+            font-size: 1.6rem;
+            font-weight: 700;
+
+            @include breakpoint(lg) {
+                font-size: 1.4rem;
+            }
+        }
+
+        p {
+            color: var(--color-gray-text);
+            font-size: 1rem;
+            font-weight: 300;
+
+            @include breakpoint(lg) {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../../Styles/variables.scss";
+@import "../../../Styles/mixin.scss";
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 2rem;
+
+    @include breakpoint(lg) {
+        padding: 2rem 1rem;
+    }
+
+    h6 {
+        @include h6;
+    }
+
+    h3 {
+        @include h3;
+    }
+
+    .box {
+        @include box;
+    }
+}

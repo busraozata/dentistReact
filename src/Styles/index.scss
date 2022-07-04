@@ -1,0 +1,54 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./mixin.scss";
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: $Roboto;
+    background-color: var(--color-bg);
+    color: var(--white);
+    background-color: var(--white);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#root {
+    height: 100%;
+}
+
+.about-page,
+.why-us,
+.board,
+.poliklinik,
+.our-partners,
+.human-resources,
+.kvkk,
+.before-after-page {
+    padding: 5rem 2rem;
+    position: relative;
+
+    @include breakpoint(lg) {
+        padding: 2rem 1rem;
+    }
+
+    h2,
+    h3 {
+        @include h3;
+    }
+
+    .sidebar {
+        @include sidebar;
+    }
+}

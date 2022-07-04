@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+.comments {
+  overflow: hidden;
+}
+
+.comments h3 {
+  color: var(--color-light-blue);
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  .comments h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.comments h6 {
+  color: var(--color-light-blue);
+  color: var(--color-gray-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .comments h6 {
+    font-size: 1rem;
+  }
+}
+
+.comments .swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.comments .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 100%;
+  height: 25rem;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: var(--color-white);
+  text-align: left;
+}
+
+.comments .swiper-slide .comment-box {
+  padding: 2rem 1rem 1.5rem 1rem;
+}
+
+.comments .swiper-slide .comment-box img {
+  max-width: 5rem;
+}
+
+.comments .swiper-slide .comment-box h4 {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: var(--color-light-blue);
+}
+
+.comments .swiper-slide .comment-box p {
+  color: var(--color-gray-text);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .comments .swiper-slide .comment-box p {
+    font-size: 0.9rem;
+  }
+}
+
+.comments .swiper-slide .comment-box a {
+  color: var(--color-light-blue);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .comments .swiper-slide .comment-box a {
+    font-size: 0.9rem;
+  }
+}
+
+.comments .swiper-slide .comment-box a i {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.comments .swiper-slide .comment-box a:hover i {
+  margin-left: 0.5rem;
+}
+
+.comments .swiper-slide .comment-box img {
+  display: block;
+  width: 100%;
+}
+
+.comments .swiper-slide .comment-box .icon-box {
+  position: absolute;
+  top: -2rem;
+  font-size: 2rem;
+  border: 1px solid var(--color-light-blue);
+  background: var(--color-light-blue);
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  right: 1rem;
+}
+
+.comments .swiper-slide .comment-box .icon-box i {
+  color: var(--color-white);
+}
+
+.comments .swiper-slide .comment-box .user-info {
+  margin-left: 1rem;
+}
+
+.comments .swiper-slide .comment-box .user-info h4 {
+  color: var(--color-light-blue);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.comments .swiper-slide .comment-box .user-info span {
+  color: var(--color-gray-text);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.comments .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.comments .swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=Comment.css.map */

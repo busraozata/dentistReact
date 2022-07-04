@@ -1,0 +1,212 @@
+{
+  "bannerSlider": [
+    {
+      "id": 1,
+      "subTitle": "Smile Design House'a Hoş Geldiniz",
+      "title": "HAYATINIZA EN İYİ DİŞ BAKIMI",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident reiciendis illum quod veniam ipsam aperiam quam earum ratione quis fugit enim accusamus sunt assumenda omnis voluptate excepturi similique error, delectus voluptates. Corrupti debitis, voluptas omnis cum repellat ab assumenda!",
+      "image": "./images/1.jpg",
+      "linkAddress": "/#",
+      "linkName": "RANDEVU AL"
+    },
+    {
+      "id": 2,
+      "subTitle": "Design House'a Hoş Geldiniz",
+      "title": "HAYATINIZA EN İYİ DİŞ BAKIMI",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident reiciendis illum quod veniam ipsam aperiam quam earum ratione quis ",
+      "image": "./images/artificial-jaw-dentist-s-office.jpg",
+      "linkAddress": "/#",
+      "linkName": "RANDEVU AL"
+    }
+  ],
+  "About": {
+    "id": 1,
+    "aboutTitle": "Hakkımızda",
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga pariatur architecto iure, ipsa expedita hic tenetur iusto tempore optio, rerum dolor eos quo sunt! Amet officia animi harum error sit similique libero labore saepe ut eligendi qui itaque distinctio cum nobis hic culpa ad quas totam rem, fugiat numquam. Eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque neque tempore maiores reiciendis alias. Assumenda, doloribus cum. Exercitationem, adipisci porro. Soluta exercitationem sapiente ad quisquam odio, aspernatur ipsum fugit tempore? Culpa libero consequatur praesentium perferendis ullam nam amet voluptate dignissimos laudantium et sapiente, iusto tenetur maiores consequuntur eius mollitia molestias nemo? Magni, quos adipisci id explicabo excepturi quod a et minima cumque similique mollitia quaerat debitis error ex, quasi ratione culpa nihil amet dolore enim optio. Repudiandae blanditiis in aliquam dolor molestiae praesentium, nihil deleniti. Aliquam temporibus explicabo, doloribus natus veritatis, sit doloremque excepturi facilis eaque, nobis aperiam non recusandae?",
+    "missionTitle": "Vizyon & Misyon",
+    "desc2": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, placeat tempora! Facilis recusandae inventore voluptate minus commodi. Doloremque odit nesciunt asperiores modi repellat quia, explicabo quo! Quos illum rem quisquam! Earum perferendis tenetur consectetur a recusandae quae praesentium porro culpa laborum necessitatibus blanditiis pariatur facere similique cum optio nesciunt ipsum accusamus cupiditate, aperiam fuga tempore consequatur non quos at. Quas aperiam ut perspiciatis? Quis deleniti perferendis et? Nobis maiores in voluptate vel eligendi exercitationem tempora dolor laudantium veritatis enim iure, praesentium sequi iusto voluptates id tenetur fugit accusantium aut quibusdam qui nesciunt. Magnam vero maiores odio voluptates, odit dignissimos officiis?",
+    "subTitle": "Üst düzey hasta memnuniyeti ve kişiselleştirilmiş tedaviler",
+    "desc3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, rerum, commodi nemo maiores non earum velit suscipit id quas ducimus maxime veritatis est? Ut, facere exercitationem sapiente ducimus esse a voluptatem magnam. Provident recusandae doloremque veniam aliquid incidunt maiores. Tempore repellendus alias deserunt reiciendis error minus facere pariatur, voluptate illum.",
+    "image": "./images/woman-patient-dentist.jpg",
+    "background": "./images/full-equiped-medical-cabinet.jpg"
+  },
+  "WhyUs": {
+    "id": 1,
+    "title": "Neden Biz",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quaerat perferendis consectetur excepturi nesciunt debitis placeat veniam fugit repudiandae autem accusantium quia enim corporis unde est fugiat nemo culpa recusandae, saepe dolorum. Ipsa neque laborum maxime praesentium consequatur accusantium suscipit corporis porro, deleniti culpa labore placeat saepe nobis officia explicabo? Minima voluptas reiciendis necessitatibus dolorem sunt eligendi. Sequi, obcaecati aut suscipit illo cumque, delectus voluptates nostrum tenetur tempore provident iste ipsam! Sequi adipisci ipsam corporis vitae, velit tempore explicabo soluta laboriosam. Atque dolorum iste mollitia alias harum unde nobis quia in nam culpa at natus optio aperiam ea voluptate nihil omnis saepe veritatis enim excepturi eos facilis, dicta tenetur? Rerum, consequuntur possimus dolores necessitatibus quas voluptate cupiditate accusamus. Dolore error illo magni vitae accusantium architecto, ea consectetur modi porro quisquam quia blanditiis odit reiciendis excepturi aperiam optio. Delectus natus veniam illo accusamus nulla consequuntur at magnam maiores, repellat autem esse."
+  },
+  "AboutBox": [
+    {
+      "id": 1,
+      "image": "./images/icon/friend.png",
+      "title": "Danışmanlık",
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum autem aperiam corporis in optio ex voluptates deleniti asperiores aliquam."
+    },
+    {
+      "id": 2,
+      "image": "./images/icon/medal.png",
+      "title": "Prototip",
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum autem aperiam corporis in optio ex voluptates deleniti asperiores aliquam."
+    },
+    {
+      "id": 3,
+      "image": "./images/icon/tooth.png",
+      "title": "Uygulama",
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum autem aperiam corporis in optio ex voluptates deleniti asperiores aliquam."
+    },
+    {
+      "id": 4,
+      "image": "./images/icon/smile.png",
+      "title": "Mutlu Gülüşler",
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum autem aperiam corporis in optio ex voluptates deleniti asperiores aliquam."
+    }
+  ],
+  "Services": [
+    {
+      "id": 1,
+      "bigTitle": "Ortodonti",
+      "subTitle": "Tel Tedavisi",
+      "serviceTitle": "Tedavilerimiz",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
+      "doctorTitle": "Uzman",
+      "doctorSize": "5 Uzman",
+      "days": "Pzt - Cmt",
+      "time": "09.00 - 22.00",
+      "image": "./images/artificial-jaw-dentist-s-office.jpg"
+    },
+    {
+      "id": 2,
+      "bigTitle": "Ortodonti",
+      "subTitle": "Tel Tedavisi",
+      "serviceTitle": "Tedavilerimiz",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
+      "doctorTitle": "Uzman",
+      "doctorSize": "5 Uzman",
+      "days": "Pzt - Cmt",
+      "time": "09.00 - 22.00",
+      "image": "./images/fchSQFn5MoDpKnlV6BLF.jpg"
+    }
+  ],
+  "Blog": [
+    {
+      "id": 1,
+      "title": "Ortodontist Nedir?",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content",
+      "image": "./images/service-1-370x232.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Diş Teli Lastik Takma Nasıl Yapılır?",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content",
+      "image": "./images/service-2-370x232.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Kanal Tedavisi Ne Kadar Sürer?",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content",
+      "image": "./images/service-3-370x232.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Kanal Tedavisi Ne Kadar Sürer?",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content",
+      "image": "./images/service-1-370x232.jpg"
+    }
+  ],
+  "Faq": [
+    {
+      "id": 1,
+      "question": "Lorem Ipsum",
+      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.      "
+    },
+    {
+      "id": 2,
+      "question": "Lorem Ipsum",
+      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.      "
+    },
+    {
+      "id": 3,
+      "question": "Lorem Ipsum",
+      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.      "
+    },
+    {
+      "id": 4,
+      "question": "Lorem Ipsum",
+      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.      "
+    }
+  ],
+  "BeforeAfter": [
+    {
+      "id": 1,
+      "beforeImage": "./images/before.jpg",
+      "afterImage": "./images/after.jpg"
+    },
+    {
+      "id": 2,
+      "beforeImage": "./images/before.jpg",
+      "afterImage": "./images/after.jpg"
+    },
+    {
+      "id": 3,
+      "beforeImage": "./images/before.jpg",
+      "afterImage": "./images/after.jpg"
+    },
+    {
+      "id": 4,
+      "beforeImage": "./images/before.jpg",
+      "afterImage": "./images/after.jpg"
+    },
+    {
+      "id": 5,
+      "beforeImage": "./images/before.jpg",
+      "afterImage": "./images/after.jpg"
+    },
+    {
+      "id": 6,
+      "beforeImage": "./images/before.jpg",
+      "afterImage": "./images/after.jpg"
+    }
+  ],
+  "Doctors": [
+    {
+      "id": 1,
+      "name": "LOREM IPSUM",
+      "title": "Lorem Ipsum",
+      "image": "./images/doctor.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "LOREM IPSUM",
+      "title": "Lorem Ipsum",
+      "image": "./images/doctor.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "LOREM IPSUM",
+      "title": "Lorem Ipsum",
+      "image": "./images/doctor.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "LOREM IPSUM",
+      "title": "Lorem Ipsum",
+      "image": "./images/doctor.jpeg"
+    }
+  ],
+  "Comments": [
+    {
+      "id": 1,
+      "image": "./images/user.png",
+      "name": "Lorem Ipsum",
+      "title": "Lorem",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium rerum vero ipsam assumenda quidem sunt velit aspernatur! Consectetur omnis sapiente exercitationem explicabo corporis temporibus tenetur, veritatis sequi cupiditate laudantium in perferendis, maxime molestiae dolorem magni possimus libero eaque pariatur voluptates."
+    },
+    {
+      "id": 2,
+      "image": "./images/user.png",
+      "name": "Lorem Ipsum",
+      "title": "Lorem",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium rerum vero ipsam assumenda quidem sunt velit aspernatur! Consectetur omnis sapiente exercitationem explicabo corporis temporibus tenetur, veritatis sequi cupiditate laudantium in perferendis, maxime molestiae dolorem magni possimus libero eaque pariatur voluptates."
+    }
+  ]
+}

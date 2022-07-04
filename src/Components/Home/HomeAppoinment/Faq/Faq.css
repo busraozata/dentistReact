@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+.faq-area {
+  padding: 0rem 1.4rem;
+}
+
+@media (max-width: 991px) {
+  .faq-area {
+    padding: 0rem 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.faq {
+  margin-top: 25px;
+  /* Style the accordion panel. Note: hidden by default */
+  /* &:nth-of-type(4n-2) {
+        .panel {
+            max-height: 100%;
+            visibility: visible;
+        }
+    } */
+}
+
+.faq .accordion {
+  padding: 0rem 0rem 1.1rem 0rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 0px;
+  background: none;
+  border-bottom: 1px solid var(--color-white);
+  font-size: 1.25rem;
+}
+
+.faq .accordion #tab-title-dimensions_tab {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.faq .accordion:hover.active {
+  background-color: transparent;
+}
+
+.faq .accordion:focus {
+  text-decoration: none;
+}
+
+.faq .accordion.active {
+  opacity: 1;
+}
+
+.faq .accordion.active i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.faq .accordion.active .vertical {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.faq .accordion.active .horizontal {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 0;
+}
+
+.faq .panel {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-property: max-height, visibility;
+  transition-property: max-height, visibility;
+  -webkit-transition-delay: 0, 400ms;
+          transition-delay: 0, 400ms;
+}
+
+.faq .panel.open {
+  visibility: visible !important;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-property: max-height, visibility;
+  transition-property: max-height, visibility;
+  -webkit-transition-delay: 400ms, 0;
+          transition-delay: 400ms, 0;
+  max-height: 100% !important;
+}
+
+.faq .panel p {
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+
+.circle-animation {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+}
+
+.circle-animation .horizontal {
+  position: absolute;
+  background-color: var(--color-light-blue);
+  width: 20px;
+  height: 3px;
+  left: 50%;
+  margin-left: -10px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.circle-animation .vertical {
+  position: absolute;
+  background-color: var(--color-light-blue);
+  width: 3px;
+  height: 20px;
+  left: 50%;
+  margin-left: -1px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.circle-animation.closed .vertical {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.circle-animation.closed .horizontal {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  opacity: 1;
+}
+/*# sourceMappingURL=Faq.css.map */

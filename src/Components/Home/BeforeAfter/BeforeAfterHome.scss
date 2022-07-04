@@ -1,0 +1,59 @@
+@import "../../../Styles/variables.scss";
+@import "../../../Styles/mixin.scss";
+.before-after {
+    padding: 5rem 2rem;
+    background-color: var(--color-gray);
+
+    @include breakpoint(lg) {
+        padding: 2rem 1rem;
+    }
+
+    .title {
+        h6 {
+            @include h6;
+        }
+
+        h3 {
+            @include h3;
+            margin-bottom: 1rem;
+        }
+
+        .button-area {
+            @include breakpoint(lg) {
+                margin: 2rem 0rem;
+            }
+
+            .button {
+                @include button;
+                color: var(--color-light-blue);
+                border-color: var(--color-light-blue);
+
+                &::before,
+                &::after {
+                    border-color: var(--color-light-blue);
+                }
+
+                @include breakpoint(lg) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    img {
+        height: 23rem;
+        width: 100%;
+
+        @include breakpoint(sm) {
+            height: 13rem;
+        }
+    }
+
+    p {
+        color: var(--color-gray-text);
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    @include before-after;
+}

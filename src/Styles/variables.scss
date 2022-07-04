@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+$Roboto: "Roboto", sans-serif;
+
+:root {
+    --color-white: #fff;
+    --color-light-blue: #009fe3;
+    --color-black: #000;
+    --color-gray: #f6f6f6;
+    --color-blue: #eceff1;
+    --color-gray-text: #757575;
+    --color-gray-2: #737575;
+    --color-blue-2: #bbdefb;
+    --color-blue-3: #0d47a1;
+    --color-purple: #7e57c2;
+}
+
+//responsive breakpoints
+@mixin breakpoint($size) {
+    @if $size == sm {
+        @media (max-width: 600px) {
+            @content;
+        }
+    } @else if $size == md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $size == lg {
+        @media (max-width: 991px) {
+            @content;
+        }
+    } @else if $size == xl {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    } @else if $size == xxl {
+        @media (max-width: 1400px) {
+            @content;
+        }
+    }
+}

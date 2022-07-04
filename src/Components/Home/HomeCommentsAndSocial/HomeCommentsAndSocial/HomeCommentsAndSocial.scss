@@ -1,0 +1,10 @@
+@import "../../../../Styles/variables.scss";
+@import "../../../../Styles/mixin.scss";
+.social-and-comments {
+    padding: 4rem 2rem;
+    background-color: var(--color-gray);
+
+    @include breakpoint(lg) {
+        padding: 2rem 1rem;
+    }
+}

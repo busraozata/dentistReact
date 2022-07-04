@@ -1,0 +1,56 @@
+.top-line {
+  padding: 0.5rem 0rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+}
+
+.top-line .contact-area ul.contact li a {
+  padding-left: 0rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.top-line .contact-area ul.contact li a i {
+  margin-right: 0.5rem;
+}
+
+.top-line .contact-area ul li a {
+  color: var(--color-white);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .top-line .contact-area ul li a {
+    font-size: 0.8rem;
+  }
+}
+
+.top-line .contact-area ul li a:hover {
+  color: var(--color-light-blue);
+}
+
+.top-line .contact-area .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.top-line .contact-area .dropdown .btn {
+  color: var(--color-white);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.top-line .contact-area .dropdown .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.top-line .contact-area .dropdown .dropdown-menu {
+  min-width: 3rem;
+}
+
+.top-line .contact-area .dropdown .dropdown-menu li a {
+  color: var(--color-light-blue);
+  font-weight: 500;
+}
+/*# sourceMappingURL=TopHeader.css.map */

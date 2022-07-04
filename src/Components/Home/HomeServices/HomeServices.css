@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+.services {
+  background-color: var(--color-gray);
+  position: relative;
+}
+
+.services .container-fluid {
+  padding: 0rem;
+}
+
+.services .container-fluid .row {
+  padding: 0rem;
+}
+
+.services .title h6 {
+  color: var(--color-light-blue);
+  color: var(--color-gray-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .services .title h6 {
+    font-size: 1rem;
+  }
+}
+
+.services .title h3 {
+  color: var(--color-light-blue);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+  .services .title h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.services .title .button-area .button {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 0;
+  color: var(--color-light-blue);
+  border-color: var(--color-light-blue);
+}
+
+.services .title .button-area .button::before, .services .title .button-area .button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid var(--color-white);
+  width: 1em;
+  height: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.services .title .button-area .button:before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+}
+
+.services .title .button-area .button:after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+
+.services .title .button-area .button:hover:before, .services .title .button-area .button:hover::after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.services .title .button-area .button::before, .services .title .button-area .button::after {
+  border-color: var(--color-light-blue);
+}
+
+@media (max-width: 991px) {
+  .services .title .button-area .button {
+    font-size: 1rem;
+  }
+}
+
+.services .services-area {
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .services .services-area {
+    margin-top: 0rem;
+  }
+}
+
+.services .services-area .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.services .services-area .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.services .services-area .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.services .services-area .swiper .modal-swiper-button-next,
+.services .services-area .swiper .swiper-rtl .modal-swiper-button-prev {
+  top: 2rem;
+  color: var(--color-light-blue);
+  top: 45%;
+  height: 100%;
+}
+
+.services .services-area .swiper .modal-swiper-button-prev,
+.services .services-area .swiper .swiper-rtl .modal-swiper-button-next {
+  top: 45%;
+  left: auto;
+  right: 3rem;
+  color: var(--color-light-blue);
+  height: 100%;
+}
+
+.services .services-area .swiper .service-content {
+  background-color: var(--color-gray);
+  padding: 5rem;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .services .services-area .swiper .service-content {
+    padding: 2rem 2rem 5rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .services .services-area .swiper .service-content {
+    padding: 2rem 1rem 5rem 1rem;
+  }
+}
+
+.services .services-area .swiper .service-content h6 {
+  color: var(--color-light-blue);
+  color: var(--color-gray-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .services .services-area .swiper .service-content h6 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .services .services-area .swiper .service-content h6 {
+    font-size: 1.1rem;
+  }
+}
+
+.services .services-area .swiper .service-content h4 {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 991px) {
+  .services .services-area .swiper .service-content h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+.services .services-area .swiper .service-content h4 strong {
+  font-weight: 500;
+  color: var(--color-light-blue);
+  font-size: 2.7rem;
+  position: relative;
+  border-right: 1px solid var(--color-gray-text);
+  padding-right: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .services .services-area .swiper .service-content h4 strong {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services .services-area .swiper .service-content h4 strong {
+    border: none;
+  }
+}
+
+.services .services-area .swiper .service-content h4 span {
+  font-weight: 400;
+  position: relative;
+  color: var(--color-gray-text);
+  padding-left: 1rem;
+}
+
+.services .services-area .swiper .service-content p {
+  font-size: 1rem;
+  color: var(--color-gray-2);
+  font-weight: 400;
+}
+
+.services .services-area .swiper .service-content .expert,
+.services .services-area .swiper .service-content .time {
+  padding: 1.25rem 2.5rem 1.25rem 1.25rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .services .services-area .swiper .service-content .expert,
+  .services .services-area .swiper .service-content .time {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 0rem !important;
+  }
+}
+
+.services .services-area .swiper .service-content .expert {
+  background-color: var(--color-blue-2);
+}
+
+.services .services-area .swiper .service-content .expert i {
+  color: var(--color-blue-3);
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--color-blue-3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.services .services-area .swiper .service-content .expert .expert-detail {
+  padding-left: 1.25rem;
+}
+
+.services .services-area .swiper .service-content .expert .expert-detail h5 {
+  color: var(--color-blue-3);
+  margin-bottom: 0rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.services .services-area .swiper .service-content .expert .expert-detail span {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.services .services-area .swiper .service-content .time {
+  background-color: #d1c4e9;
+  margin-left: 1rem;
+}
+
+.services .services-area .swiper .service-content .time i {
+  color: var(--color-purple);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.services .services-area .swiper .service-content .time .time-detail {
+  padding-left: 1.25rem;
+}
+
+.services .services-area .swiper .service-content .time .time-detail h5 {
+  color: var(--color-purple);
+  margin-bottom: 0rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.services .services-area .swiper .service-content .time .time-detail span {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.services .services-area .swiper .service-content .button-area {
+  margin-top: 4rem;
+}
+
+.services .services-area .swiper .service-content .button-area .button {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 0;
+  color: var(--color-gray-2);
+  border-color: var(--color-gray-2);
+}
+
+.services .services-area .swiper .service-content .button-area .button::before, .services .services-area .swiper .service-content .button-area .button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid var(--color-white);
+  width: 1em;
+  height: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.services .services-area .swiper .service-content .button-area .button:before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+}
+
+.services .services-area .swiper .service-content .button-area .button:after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+
+.services .services-area .swiper .service-content .button-area .button:hover:before, .services .services-area .swiper .service-content .button-area .button:hover::after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.services .services-area .swiper .service-content .button-area .button::before, .services .services-area .swiper .service-content .button-area .button::after {
+  border-color: var(--color-gray-2);
+}
+/*# sourceMappingURL=HomeServices.css.map */

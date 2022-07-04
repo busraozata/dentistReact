@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+.why-us .content {
+  padding-left: 1rem;
+}
+
+@media (max-width: 991px) {
+  .why-us .content {
+    padding-left: 0rem;
+    margin-top: 2rem;
+  }
+}
+
+.why-us .content .box:hover .icon-box {
+  border: 2px solid var(--color-light-blue);
+}
+
+.why-us .content .box .icon-box {
+  height: 6rem;
+  margin-left: 0;
+  margin-right: 0;
+  width: 6rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.why-us .content .box .icon-box img {
+  max-width: 3.5rem;
+}
+
+.why-us .content .box .content h3 {
+  color: var(--color-gray-text);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1.5rem 0rem;
+}
+
+.why-us .content .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-gray-text);
+}
+
+.why-us .content p {
+  font-size: 1rem;
+  color: var(--color-gray-text);
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.parallax {
+  padding: 3rem 2rem;
+}
+/*# sourceMappingURL=WhyUs.css.map */

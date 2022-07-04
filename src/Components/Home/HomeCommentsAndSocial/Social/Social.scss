@@ -1,0 +1,44 @@
+@import "../../../../Styles/variables.scss";
+@import "../../../../Styles/mixin.scss";
+.social {
+    h6 {
+        @include h6;
+        color: var(--color-light-blue);
+    }
+
+    h3 {
+        @include h3;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        color: var(--color-gray-text);
+    }
+
+    .social-media {
+        margin-bottom: 1rem;
+
+        @include breakpoint(lg) {
+            margin-bottom: 2rem;
+        }
+
+        li {
+            margin-right: 2rem;
+
+            a {
+                i {
+                    font-size: 2rem;
+                    color: var(--color-light-blue);
+                    transition: 0.3s all;
+
+                    @include breakpoint(lg) {
+                        font-size: 1.5rem;
+                    }
+
+                    &:hover {
+                        color: var(--color-gray-text);
+                    }
+                }
+            }
+        }
+    }
+}

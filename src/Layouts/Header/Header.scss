@@ -1,0 +1,301 @@
+@import "../../Styles/variables.scss";
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+
+    @media screen and(min-width:991px) {
+        .container {
+            position: relative;
+        }
+    }
+
+    .header-inner {
+        padding: 1rem 0rem;
+        transition: 0.3s all;
+
+        &.sticky {
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.548);
+            top: 0;
+            padding: 0.5rem 0rem !important;
+
+            .navbar-brand {
+                img {
+                    max-width: 10rem !important;
+                    object-fit: cover;
+                }
+            }
+
+            .menu-area {
+                ul {
+                    margin-bottom: 0rem !important;
+
+                    @include breakpoint(lg) {
+                        margin-bottom: 2rem !important;
+                    }
+                }
+            }
+        }
+
+        .header-area {
+            .navbar-brand {
+                img {
+                    filter: brightness(0) invert(1);
+                    max-width: 12rem;
+                    object-fit: cover;
+
+                    @include breakpoint(lg) {
+                        max-width: 10rem ;
+                    }
+                }
+
+                @include breakpoint(lg) {
+                    padding: 1rem;
+                }
+            }
+
+            .hamburger {
+                margin-bottom: 2rem !important;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                position: absolute;
+                right: 1rem;
+                z-index: 999;
+
+                .line {
+                    display: block;
+                    width: 40px;
+                    height: 2px;
+                    background-color: var(--color-white);
+                    margin-block: 10px;
+                    border-radius: 4px;
+                    transition: 0.3s all;
+                }
+
+                &.active {
+                    .line {
+                        background-color: var(--color-black);
+
+                        &:nth-child(1) {
+                            transform: translateY(13px) rotate(45deg);
+                        }
+
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
+
+                        &:nth-child(3) {
+                            transform: translateY(-13px) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+
+            .menu-area {
+                ul {
+                    @include breakpoint(lg) {
+                        margin-bottom: 2rem !important;
+                    }
+                    .nav-item {
+                        &:last-child {
+                            border: 1px solid var(--color-light-blue);
+                            background-color: var(--color-light-blue);
+                            transition: 0.3s all;
+
+                            &:hover {
+                                background-color: transparent;
+                            }
+                            a {
+                                @include breakpoint(lg) {
+                                    color: var(--color-white) !important;
+                                }
+                            }
+                        }
+
+                        a {
+                            color: var(--color-white);
+                            cursor: pointer;
+                            transition: 0.3s all;
+                            font-size: 1.2rem;
+                            font-weight: 500;
+
+                            @include breakpoint(xl) {
+                                font-size: 1rem;
+                            }
+
+                            &:hover {
+                                color: var(--color-light-blue);
+                            }
+
+                            &.active {
+                                color: var(--color-light-blue);
+                            }
+                        }
+
+                        .dropdown-menu {
+                            min-width: 15rem;
+                            padding: 1rem !important;
+                            border: none;
+                            border-bottom: 2px solid var(--color-light-blue) !important;
+                            &.mega-menu {
+                                left: 0rem;
+
+                                @include breakpoint(lg) {
+                                    height: 15rem;
+                                    overflow-y: auto;
+                                    overflow-x: hidden;
+                                }
+                            }
+
+                            @include breakpoint(lg) {
+                                position: relative !important;
+                                transform: inherit !important;
+                                border: none !important;
+                                padding: 0;
+                            }
+
+                            img {
+                                transition: 0.3s all;
+                                height: 22rem;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+
+                            li {
+                                position: relative;
+                                padding-left: 0rem;
+                                &:hover {
+                                    &::before {
+                                        width: 100%;
+                                    }
+                                }
+
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    background-color: var(--color-light-blue);
+                                    width: 0;
+                                    height: 2px;
+                                    bottom: 0;
+                                    transition: all 0.3s ease-out;
+                                }
+                                a {
+                                    color: var(--color-gray-text);
+                                    font-size: 1.1rem;
+                                    font-weight: 500;
+                                    transition: 0.3s all;
+
+                                    @include breakpoint(xl) {
+                                        font-size: 1rem;
+                                        padding-left: 1rem;
+                                    }
+
+                                    &:hover {
+                                        color: var(--color-light-blue);
+
+                                        i {
+                                            margin-right: 1rem;
+                                        }
+                                    }
+
+                                    i {
+                                        margin-right: 0.5rem;
+                                        transition: 0.5s all;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .dropdown-menu {
+                                display: block;
+
+                                .dropdown-item {
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+
+                        .sub-item {
+                            @media screen and (min-width: 991px) {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+                                flex-wrap: wrap;
+                                li {
+                                    width: calc(50% - 30px);
+                                    padding: 0.5rem 0rem;
+                                    margin: 0 0.5rem;
+                                }
+                            }
+
+                            li {
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+
+                @include breakpoint(lg) {
+                    opacity: 0;
+                    visibility: hidden;
+                    width: 0%;
+                    position: absolute;
+                    background-color: var(--color-white);
+                    left: 0;
+                    height: 100vh;
+                    bottom: 0;
+                    top: 0;
+                    padding: 1rem 2rem;
+                    flex-direction: column;
+                    transition: 0.3s all !important;
+                    .menu {
+                        flex-direction: column;
+                        align-items: flex-start !important;
+
+                        li {
+                            a {
+                                color: var(--color-light-blue);
+                            }
+                        }
+                    }
+                    .language-area-mobil {
+                        display: flex !important;
+
+                        li {
+                            margin-right: 1rem;
+
+                            a {
+                                font-weight: 600;
+                                border: 1px solid var(--color-light-blue);
+                                padding: 0.2rem 0.4rem;
+                                font-size: 0.7rem;
+                                color: var(--color-light-blue);
+                            }
+                        }
+                    }
+                }
+
+                &.active {
+                    @include breakpoint(lg) {
+                        width: 100%;
+                        opacity: 9;
+                        visibility: visible;
+                        img {
+                            filter: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

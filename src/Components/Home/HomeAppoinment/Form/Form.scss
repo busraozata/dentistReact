@@ -1,0 +1,28 @@
+@import "../../../../Styles/variables.scss";
+@import "../../../../Styles/mixin.scss";
+.form {
+    form {
+        .form-control {
+            padding: 0.7rem;
+            padding-left: 1rem;
+            border: 1px solid #edf0f3;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            @include button;
+            margin-top: 1rem;
+            color: var(--white) !important;
+            @include breakpoint(lg) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

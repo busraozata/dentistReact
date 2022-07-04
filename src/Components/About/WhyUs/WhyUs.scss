@@ -1,0 +1,26 @@
+@import "../../../Styles/variables.scss";
+@import "../../../Styles/mixin.scss";
+.why-us {
+    .content {
+        padding-left: 1rem;
+
+        @include breakpoint(lg) {
+            padding-left: 0rem;
+            margin-top: 2rem;
+        }
+
+        .box {
+            @include box;
+        }
+
+        p {
+            font-size: 1rem;
+            color: var(--color-gray-text);
+            margin-top: 1rem;
+            font-weight: 400;
+        }
+    }
+}
+.parallax {
+    padding: 3rem 2rem;
+}

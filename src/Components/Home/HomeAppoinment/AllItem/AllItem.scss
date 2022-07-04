@@ -1,0 +1,42 @@
+@import "../../../../Styles/variables.scss";
+@import "../../../../Styles/mixin.scss";
+.appoinment {
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+    padding: 5rem;
+
+    @include breakpoint(xl) {
+        padding: 2rem 1rem 5rem 1rem;
+    }
+
+    &:before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.637);
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        bottom: 0rem;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+    }
+
+    .title {
+        margin-bottom: 2.5rem;
+
+        h3 {
+            @include h3;
+            font-size: 2.5rem;
+        }
+
+        h6 {
+            @include h6;
+        }
+    }
+
+   
+}

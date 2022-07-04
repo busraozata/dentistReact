@@ -1,0 +1,67 @@
+.top-line {
+    padding: 0.5rem 0rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+
+    .contact-area {
+        ul {
+            &.contact {
+                li {
+                    a {
+                        padding-left: 0rem;
+                        font-weight: 400;
+                        cursor: pointer;
+
+                        i {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            li {
+                a {
+                    color: var(--color-white);
+                    transition: 0.3s all;
+                    font-size: 0.9rem;
+
+                    @include breakpoint(xxl) {
+                        font-size: 0.8rem;
+                    }
+
+                    &:hover {
+                        color: var(--color-light-blue);
+                    }
+                }
+            }
+        }
+
+        .dropdown {
+            &:hover {
+                .dropdown-menu {
+                    display: block;
+                }
+            }
+
+            .btn {
+                color: var(--color-white);
+                font-size: 0.9rem;
+                font-weight: 500;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .dropdown-menu {
+                min-width: 3rem;
+
+                li {
+                    a {
+                        color: var(--color-light-blue);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

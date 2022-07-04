@@ -1,0 +1,152 @@
+@import "../../../Styles/variables.scss";
+@import "../../../Styles/mixin.scss";
+
+.banner {
+    position: relative;
+
+    width: 100%;
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+        .slide-inner {
+            width: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            min-height: 100vh;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            z-index: 1;
+            padding: 1rem;
+
+            @include breakpoint(lg) {
+                min-height: 50vh !important;
+            }
+
+            &:before {
+                content: "";
+                background-color: rgba(0, 0, 0, 0.452);
+                height: 100%;
+                width: 100%;
+                display: block;
+                position: absolute;
+                z-index: -1;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                left: 0;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .content {
+                margin-top: 4rem;
+
+                .text {
+                    max-width: 35rem;
+                    width: 100%;
+                    text-align: left;
+
+                    h1 {
+                        color: var(--color-white);
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                        font-family: "Roboto Condensed", sans-serif;
+                        font-size: 2.8rem;
+
+                        @include breakpoint(lg) {
+                            font-size: 1.8rem;
+                        }
+
+                        @include breakpoint(sm) {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    h6 {
+                        color: var(--color-white);
+                        font-weight: 500;
+                        margin-bottom: 1rem;
+                        font-size: 1.2rem;
+
+                        @include breakpoint(lg) {
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    p {
+                        color: var(--color-white);
+                        font-weight: 500;
+                        font-size: 1rem;
+                        position: relative;
+
+                        @include breakpoint(lg) {
+                            display: none;
+                        }
+                    }
+
+                    .button-area {
+                        margin-top: 2rem;
+
+                        .button {
+                            @include button;
+
+                            @include breakpoint(sm) {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .img-wrapper {
+                position: relative;
+
+                img {
+                    display: block;
+                    height: 12rem;
+                    object-fit: cover;
+                    width: 55rem;
+                }
+            }
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            height: 100%;
+            top: 45%;
+            color: var(--color-white);
+            right: 2rem;
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            height: 100%;
+            top: 45%;
+            left: auto;
+            right: 5rem;
+            color: var(--color-white);
+        }
+    }
+}

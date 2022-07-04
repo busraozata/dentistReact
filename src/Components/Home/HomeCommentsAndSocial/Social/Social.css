@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+.social h6 {
+  color: var(--color-light-blue);
+  color: var(--color-gray-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-light-blue);
+}
+
+@media (max-width: 1200px) {
+  .social h6 {
+    font-size: 1rem;
+  }
+}
+
+.social h3 {
+  color: var(--color-light-blue);
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  color: var(--color-gray-text);
+}
+
+@media (max-width: 1200px) {
+  .social h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.social .social-media {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+  .social .social-media {
+    margin-bottom: 2rem;
+  }
+}
+
+.social .social-media li {
+  margin-right: 2rem;
+}
+
+.social .social-media li a i {
+  font-size: 2rem;
+  color: var(--color-light-blue);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+@media (max-width: 991px) {
+  .social .social-media li a i {
+    font-size: 1.5rem;
+  }
+}
+
+.social .social-media li a i:hover {
+  color: var(--color-gray-text);
+}
+/*# sourceMappingURL=Social.css.map */

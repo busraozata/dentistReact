@@ -1,0 +1,131 @@
+@import "../../../../Styles/variables.scss";
+@import "../../../../Styles/mixin.scss";
+
+.faq-area {
+    padding: 0rem 1.4rem;
+
+    @include breakpoint(lg) {
+        padding: 0rem 1rem;
+        margin-top: 1rem;
+    }
+}
+
+.faq {
+    margin-top: 25px;
+
+    .accordion {
+        padding: 0rem 0rem 1.1rem 0rem;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        border-radius: 0px;
+        background: none;
+        border-bottom: 1px solid var(--color-white);
+        font-size: 1.25rem;
+
+        #tab-title-dimensions_tab {
+            color: var(--color-white);
+            font-weight: 500;
+        }
+
+        &:hover {
+            &.active {
+                background-color: transparent;
+            }
+        }
+
+        &:focus {
+            text-decoration: none;
+        }
+
+        &.active {
+            i {
+                transform: rotate(90deg);
+            }
+
+            opacity: 1;
+
+            .vertical {
+                transition: all 0.4s ease-in-out;
+                transform: rotate(90deg);
+            }
+
+            .horizontal {
+                transition: all 0.4s ease-in-out;
+                transform: rotate(90deg);
+                opacity: 0;
+            }
+        }
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    /* &:nth-of-type(4n-2) {
+        .panel {
+            max-height: 100%;
+            visibility: visible;
+        }
+    } */
+    .panel {
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition-duration: 400ms;
+        transition-property: max-height, visibility;
+        transition-delay: 0, 400ms;
+
+        &.open {
+            visibility: visible !important;
+            transition-duration: 400ms;
+            transition-property: max-height, visibility;
+            transition-delay: 400ms, 0;
+            max-height: 100% !important;
+        }
+
+        p {
+            color: var(--color-white);
+            margin-top: 1rem;
+        }
+    }
+}
+
+.circle-animation {
+    position: relative;
+    flex: 0 0 30px;
+
+    .horizontal {
+        position: absolute;
+        background-color: var(--color-light-blue);
+        width: 20px;
+        height: 3px;
+        left: 50%;
+        margin-left: -10px;
+        top: 50%;
+        margin-top: -1px;
+    }
+
+    .vertical {
+        position: absolute;
+        background-color: var(--color-light-blue);
+        width: 3px;
+        height: 20px;
+        left: 50%;
+        margin-left: -1px;
+        top: 50%;
+        margin-top: -10px;
+    }
+
+    &.closed {
+        .vertical {
+            transition: all 0.4s ease-in-out;
+            transform: rotate(-90deg);
+        }
+
+        .horizontal {
+            transition: all 0.4s ease-in-out;
+            transform: rotate(-90deg);
+            opacity: 1;
+        }
+    }
+}

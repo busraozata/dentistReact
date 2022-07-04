@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding-left: 0rem;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+dl,
+ol,
+ul {
+  margin-bottom: 0rem !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul > li {
+  list-style-type: none !important;
+}
+
+ol,
+ul {
+  padding-left: 0rem !important;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--white);
+  background-color: var(--white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  height: 100%;
+}
+
+.about-page,
+.why-us,
+.board,
+.poliklinik,
+.our-partners,
+.human-resources,
+.kvkk,
+.before-after-page {
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .about-page,
+  .why-us,
+  .board,
+  .poliklinik,
+  .our-partners,
+  .human-resources,
+  .kvkk,
+  .before-after-page {
+    padding: 2rem 1rem;
+  }
+}
+
+.about-page h2,
+.about-page h3,
+.why-us h2,
+.why-us h3,
+.board h2,
+.board h3,
+.poliklinik h2,
+.poliklinik h3,
+.our-partners h2,
+.our-partners h3,
+.human-resources h2,
+.human-resources h3,
+.kvkk h2,
+.kvkk h3,
+.before-after-page h2,
+.before-after-page h3 {
+  color: var(--color-light-blue);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+  .about-page h2,
+  .about-page h3,
+  .why-us h2,
+  .why-us h3,
+  .board h2,
+  .board h3,
+  .poliklinik h2,
+  .poliklinik h3,
+  .our-partners h2,
+  .our-partners h3,
+  .human-resources h2,
+  .human-resources h3,
+  .kvkk h2,
+  .kvkk h3,
+  .before-after-page h2,
+  .before-after-page h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.about-page .sidebar,
+.why-us .sidebar,
+.board .sidebar,
+.poliklinik .sidebar,
+.our-partners .sidebar,
+.human-resources .sidebar,
+.kvkk .sidebar,
+.before-after-page .sidebar {
+  -webkit-box-shadow: 3px 7px 23px -8px rgba(0, 0, 0, 0.42);
+          box-shadow: 3px 7px 23px -8px rgba(0, 0, 0, 0.42);
+  /*   height: 100%; */
+  padding: 4rem 2rem;
+  background-color: var(--color-light-blue);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.about-page .sidebar ul li,
+.why-us .sidebar ul li,
+.board .sidebar ul li,
+.poliklinik .sidebar ul li,
+.our-partners .sidebar ul li,
+.human-resources .sidebar ul li,
+.kvkk .sidebar ul li,
+.before-after-page .sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+.about-page .sidebar ul li a,
+.why-us .sidebar ul li a,
+.board .sidebar ul li a,
+.poliklinik .sidebar ul li a,
+.our-partners .sidebar ul li a,
+.human-resources .sidebar ul li a,
+.kvkk .sidebar ul li a,
+.before-after-page .sidebar ul li a {
+  color: var(--color-white);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.about-page .sidebar ul li a.active,
+.why-us .sidebar ul li a.active,
+.board .sidebar ul li a.active,
+.poliklinik .sidebar ul li a.active,
+.our-partners .sidebar ul li a.active,
+.human-resources .sidebar ul li a.active,
+.kvkk .sidebar ul li a.active,
+.before-after-page .sidebar ul li a.active {
+  font-weight: 900;
+}
+
+@media (max-width: 991px) {
+  .about-page .sidebar ul li a,
+  .why-us .sidebar ul li a,
+  .board .sidebar ul li a,
+  .poliklinik .sidebar ul li a,
+  .our-partners .sidebar ul li a,
+  .human-resources .sidebar ul li a,
+  .kvkk .sidebar ul li a,
+  .before-after-page .sidebar ul li a {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
