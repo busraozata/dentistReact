@@ -24,11 +24,7 @@
     "aboutTitle": "Hakkımızda",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga pariatur architecto iure, ipsa expedita hic tenetur iusto tempore optio, rerum dolor eos quo sunt! Amet officia animi harum error sit similique libero labore saepe ut eligendi qui itaque distinctio cum nobis hic culpa ad quas totam rem, fugiat numquam. Eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque neque tempore maiores reiciendis alias. Assumenda, doloribus cum. Exercitationem, adipisci porro. Soluta exercitationem sapiente ad quisquam odio, aspernatur ipsum fugit tempore? Culpa libero consequatur praesentium perferendis ullam nam amet voluptate dignissimos laudantium et sapiente, iusto tenetur maiores consequuntur eius mollitia molestias nemo? Magni, quos adipisci id explicabo excepturi quod a et minima cumque similique mollitia quaerat debitis error ex, quasi ratione culpa nihil amet dolore enim optio. Repudiandae blanditiis in aliquam dolor molestiae praesentium, nihil deleniti. Aliquam temporibus explicabo, doloribus natus veritatis, sit doloremque excepturi facilis eaque, nobis aperiam non recusandae?",
     "missionTitle": "Vizyon & Misyon",
-    "desc2": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, placeat tempora! Facilis recusandae inventore voluptate minus commodi. Doloremque odit nesciunt asperiores modi repellat quia, explicabo quo! Quos illum rem quisquam! Earum perferendis tenetur consectetur a recusandae quae praesentium porro culpa laborum necessitatibus blanditiis pariatur facere similique cum optio nesciunt ipsum accusamus cupiditate, aperiam fuga tempore consequatur non quos at. Quas aperiam ut perspiciatis? Quis deleniti perferendis et? Nobis maiores in voluptate vel eligendi exercitationem tempora dolor laudantium veritatis enim iure, praesentium sequi iusto voluptates id tenetur fugit accusantium aut quibusdam qui nesciunt. Magnam vero maiores odio voluptates, odit dignissimos officiis?",
-    "subTitle": "Üst düzey hasta memnuniyeti ve kişiselleştirilmiş tedaviler",
-    "desc3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, rerum, commodi nemo maiores non earum velit suscipit id quas ducimus maxime veritatis est? Ut, facere exercitationem sapiente ducimus esse a voluptatem magnam. Provident recusandae doloremque veniam aliquid incidunt maiores. Tempore repellendus alias deserunt reiciendis error minus facere pariatur, voluptate illum.",
-    "image": "./images/woman-patient-dentist.jpg",
-    "background": "./images/full-equiped-medical-cabinet.jpg"
+    "desc2": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, placeat tempora! Facilis recusandae inventore voluptate minus commodi. Doloremque odit nesciunt asperiores modi repellat quia, explicabo quo! Quos illum rem quisquam! Earum perferendis tenetur consectetur a recusandae quae praesentium porro culpa laborum necessitatibus blanditiis pariatur facere similique cum optio nesciunt ipsum accusamus cupiditate, aperiam fuga tempore consequatur non quos at. Quas aperiam ut perspiciatis? Quis deleniti perferendis et? Nobis maiores in voluptate vel eligendi exercitationem tempora dolor laudantium veritatis enim iure, praesentium sequi iusto voluptates id tenetur fugit accusantium aut quibusdam qui nesciunt. Magnam vero maiores odio voluptates, odit dignissimos officiis?"
   },
   "WhyUs": {
     "id": 1,
@@ -64,27 +60,115 @@
   "Services": [
     {
       "id": 1,
-      "bigTitle": "Ortodonti",
+      "bigTitle": "Genel Diş Hekimliği",
       "subTitle": "Tel Tedavisi",
       "serviceTitle": "Tedavilerimiz",
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
+      "shortDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
       "doctorTitle": "Uzman",
       "doctorSize": "5 Uzman",
       "days": "Pzt - Cmt",
       "time": "09.00 - 22.00",
-      "image": "./images/artificial-jaw-dentist-s-office.jpg"
+      "image": "/images/artificial-jaw-dentist-s-office.jpg",
+      "image2": "/images/services-1.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at officiis repellat ipsum nisi nesciunt voluptate et corrupti facilis quasi eaque repudiandae velit nostrum vel doloribus ab, qui voluptatibus quidem? Impedit magni velit sit laudantium quidem eos sequi fugit quo officiis, accusamus sed earum, tempore neque voluptatibus enim nostrum! Blanditiis voluptate aut beatae exercitationem in, voluptas rerum nisi perferendis sed consectetur alias eligendi sit. Veritatis, quibusdam! Ullam officia ducimus voluptates laboriosam quae praesentium a et, laborum fuga error qui labore hic, possimus similique quis veritatis fugit, dolor nam eius? Odio a consequuntur veritatis mollitia sequi distinctio dicta! Porro, tempore qui!",
+      "icon": "/images/icon/dentist-chair.png",
+      "tags": [
+        {
+          "id": 1,
+          "tag": "Business"
+        },
+        {
+          "id": 2,
+          "tag": "Privacy"
+        },
+        {
+          "id": 3,
+          "tag": "Technology"
+        },
+        {
+          "id": 4,
+          "tag": "Tips"
+        },
+        {
+          "id": 5,
+          "tag": "Uncategorized"
+        }
+      ]
     },
     {
       "id": 2,
-      "bigTitle": "Ortodonti",
+      "bigTitle": "Porcelen Diş Teli",
       "subTitle": "Tel Tedavisi",
       "serviceTitle": "Tedavilerimiz",
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
+      "shortDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
       "doctorTitle": "Uzman",
       "doctorSize": "5 Uzman",
       "days": "Pzt - Cmt",
       "time": "09.00 - 22.00",
-      "image": "./images/fchSQFn5MoDpKnlV6BLF.jpg"
+      "image": "/images/fchSQFn5MoDpKnlV6BLF.jpg",
+      "image2": "/images/services-2.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at officiis repellat ipsum nisi nesciunt voluptate et corrupti facilis quasi eaque repudiandae velit nostrum vel doloribus ab, qui voluptatibus quidem? Impedit magni velit sit laudantium quidem eos sequi fugit quo officiis, accusamus sed earum, tempore neque voluptatibus enim nostrum! Blanditiis voluptate aut beatae exercitationem in, voluptas rerum nisi perferendis sed consectetur alias eligendi sit. Veritatis, quibusdam! Ullam officia ducimus voluptates laboriosam quae praesentium a et, laborum fuga error qui labore hic, possimus similique quis veritatis fugit, dolor nam eius? Odio a consequuntur veritatis mollitia sequi distinctio dicta! Porro, tempore qui!",
+      "icon": "/images/icon/dental-checkup.png"
+    },
+    {
+      "id": 3,
+      "bigTitle": "Diş Beyazlatma",
+      "subTitle": "Tel Tedavisi",
+      "serviceTitle": "Tedavilerimiz",
+      "shortDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
+      "doctorTitle": "Uzman",
+      "doctorSize": "5 Uzman",
+      "days": "Pzt - Cmt",
+      "time": "09.00 - 22.00",
+      "image": "/images/fchSQFn5MoDpKnlV6BLF.jpg",
+      "image2": "/images/services-3.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at officiis repellat ipsum nisi nesciunt voluptate et corrupti facilis quasi eaque repudiandae velit nostrum vel doloribus ab, qui voluptatibus quidem? Impedit magni velit sit laudantium quidem eos sequi fugit quo officiis, accusamus sed earum, tempore neque voluptatibus enim nostrum! Blanditiis voluptate aut beatae exercitationem in, voluptas rerum nisi perferendis sed consectetur alias eligendi sit. Veritatis, quibusdam! Ullam officia ducimus voluptates laboriosam quae praesentium a et, laborum fuga error qui labore hic, possimus similique quis veritatis fugit, dolor nam eius? Odio a consequuntur veritatis mollitia sequi distinctio dicta! Porro, tempore qui!",
+      "icon": "/images/icon/dental-implant.png"
+    },
+    {
+      "id": 4,
+      "bigTitle": "Ortodonti",
+      "subTitle": "Tel Tedavisi",
+      "serviceTitle": "Tedavilerimiz",
+      "shortDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
+      "doctorTitle": "Uzman",
+      "doctorSize": "5 Uzman",
+      "days": "Pzt - Cmt",
+      "time": "09.00 - 22.00",
+      "image": "/images/fchSQFn5MoDpKnlV6BLF.jpg",
+      "image2": "/images/services-4.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at officiis repellat ipsum nisi nesciunt voluptate et corrupti facilis quasi eaque repudiandae velit nostrum vel doloribus ab, qui voluptatibus quidem? Impedit magni velit sit laudantium quidem eos sequi fugit quo officiis, accusamus sed earum, tempore neque voluptatibus enim nostrum! Blanditiis voluptate aut beatae exercitationem in, voluptas rerum nisi perferendis sed consectetur alias eligendi sit. Veritatis, quibusdam! Ullam officia ducimus voluptates laboriosam quae praesentium a et, laborum fuga error qui labore hic, possimus similique quis veritatis fugit, dolor nam eius? Odio a consequuntur veritatis mollitia sequi distinctio dicta! Porro, tempore qui!",
+      "icon": "/images/icon/tooth-2.png"
+    },
+    {
+      "id": 5,
+      "bigTitle": "Diş temizliği",
+      "subTitle": "Tel Tedavisi",
+      "serviceTitle": "Tedavilerimiz",
+      "shortDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
+      "doctorTitle": "Uzman",
+      "doctorSize": "5 Uzman",
+      "days": "Pzt - Cmt",
+      "time": "09.00 - 22.00",
+      "image": "/images/fchSQFn5MoDpKnlV6BLF.jpg",
+      "image2": "/images/services-5.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at officiis repellat ipsum nisi nesciunt voluptate et corrupti facilis quasi eaque repudiandae velit nostrum vel doloribus ab, qui voluptatibus quidem? Impedit magni velit sit laudantium quidem eos sequi fugit quo officiis, accusamus sed earum, tempore neque voluptatibus enim nostrum! Blanditiis voluptate aut beatae exercitationem in, voluptas rerum nisi perferendis sed consectetur alias eligendi sit. Veritatis, quibusdam! Ullam officia ducimus voluptates laboriosam quae praesentium a et, laborum fuga error qui labore hic, possimus similique quis veritatis fugit, dolor nam eius? Odio a consequuntur veritatis mollitia sequi distinctio dicta! Porro, tempore qui!",
+      "icon": "/images/icon/tooth-3.png"
+    },
+    {
+      "id": 6,
+      "bigTitle": "Sterilizasyon",
+      "subTitle": "Tel Tedavisi",
+      "serviceTitle": "Tedavilerimiz",
+      "shortDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat vitae, perferendis illum odit eum sit, culpa, cum soluta possimus nulla porro quae voluptate quasi nemo maiores in saepe nesciunt eaque! Totam sapiente, consequatur repellendus laudantium ad est soluta quo nesciunt enim maiores, necessitatibus, rem sint eaque ea dolorem obcaecati!",
+      "doctorTitle": "Uzman",
+      "doctorSize": "5 Uzman",
+      "days": "Pzt - Cmt",
+      "time": "09.00 - 22.00",
+      "image": "/images/fchSQFn5MoDpKnlV6BLF.jpg",
+      "image2": "/images/services-6.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at officiis repellat ipsum nisi nesciunt voluptate et corrupti facilis quasi eaque repudiandae velit nostrum vel doloribus ab, qui voluptatibus quidem? Impedit magni velit sit laudantium quidem eos sequi fugit quo officiis, accusamus sed earum, tempore neque voluptatibus enim nostrum! Blanditiis voluptate aut beatae exercitationem in, voluptas rerum nisi perferendis sed consectetur alias eligendi sit. Veritatis, quibusdam! Ullam officia ducimus voluptates laboriosam quae praesentium a et, laborum fuga error qui labore hic, possimus similique quis veritatis fugit, dolor nam eius? Odio a consequuntur veritatis mollitia sequi distinctio dicta! Porro, tempore qui!",
+      "icon": "/images/icon/tooth-4.png"
     }
   ],
   "Blog": [
@@ -208,5 +292,42 @@
       "title": "Lorem",
       "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium rerum vero ipsam assumenda quidem sunt velit aspernatur! Consectetur omnis sapiente exercitationem explicabo corporis temporibus tenetur, veritatis sequi cupiditate laudantium in perferendis, maxime molestiae dolorem magni possimus libero eaque pariatur voluptates."
     }
-  ]
+  ],
+  "Polyclinic": [
+    {
+      "id": 1,
+      "title": "Poliklinik",
+      "image": "./images/empty-stomatology-orthodontist-hospital-cabinet-with-nobody-it.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Poliklinik",
+      "image": "images/full-equiped-medical-cabinet.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Poliklinik",
+      "image": "images/revealing-shot-empty-orthodontic-office.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Poliklinik",
+      "image": "images/woman-patient-dentist.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Poliklinik",
+      "image": "images/full-equiped-medical-cabinet.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Poliklinik",
+      "image": "images/empty-stomatology-orthodontist-hospital-cabinet-with-nobody-it.jpg"
+    }
+  ],
+  "Kvkk": {
+    "id": 1,
+    "title": "Kişisel Verilerin Korunması Kanunu",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magnam culpa sunt odit repudiandae nesciunt quae porro ipsum ex officiis. Ipsam alias laudantium libero accusantium quod, repudiandae dolorem dolor modi necessitatibus ex maxime deleniti qui beatae a, quia similique vel eligendi eaque delectus nesciunt, commodi autem. Minus sunt beatae totam sapiente debitis quos voluptatibus in, reprehenderit nesciunt? Ut perferendis accusamus dolor voluptatem nam iure numquam impedit iusto quam! Expedita quos, culpa veritatis accusamus alias odit sequi nostrum, omnis ipsa inventore consequuntur unde? Fugiat velit deleniti assumenda enim nostrum harum inventore porro alias maiores veniam a accusantium nemo earum sint officia, expedita excepturi quos, veritatis impedit aliquid eligendi nam quia aliquam! Sunt hic quisquam aut deserunt voluptatibus quam obcaecati quaerat labore praesentium, iste fugit, animi porro ea ducimus atque architecto, perspiciatis repudiandae distinctio! Hic, odio perferendis. Cumque rerum facilis harum optio officia officiis eum exercitationem debitis, consequatur aspernatur, nam voluptate repudiandae at. Cumque ullam ex voluptatum eius corporis sequi esse tempora voluptate? Atque neque inventore magnam optio ducimus labore maxime officia voluptas ea iure vel, itaque consequatur pariatur voluptatum fugiat veritatis temporibus mollitia hic ipsam ratione? Ipsum, tempore aliquam ullam voluptatibus ipsam soluta quas reprehenderit libero, consequuntur dolorum at. Corrupti dolores nihil vel, excepturi cumque culpa impedit itaque dolorum, suscipit, soluta expedita dolor accusamus temporibus dolorem reprehenderit incidunt cum! Ducimus non sit, autem quae molestiae molestias eaque vitae praesentium inventore. Ea sunt provident reprehenderit repudiandae illo id numquam laudantium repellendus est beatae delectus assumenda, iure voluptates temporibus sit cumque ab eveniet, minima vel alias cupiditate? Perferendis, totam deleniti mollitia eum quod accusamus recusandae error quia odit corrupti tempora quibusdam eveniet fugit neque maxime sed voluptates velit praesentium quasi nemo porro placeat, aliquid, esse perspiciatis. Dolor, deserunt! Beatae inventore saepe culpa libero soluta! Suscipit vero nisi, quasi nam quam odit earum ullam placeat quidem nulla sed inventore eligendi explicabo. Incidunt vero laboriosam cupiditate, quia cum aperiam voluptate voluptas! Ipsum odit harum maxime perferendis ea ipsa quam iste illum blanditiis nam error, vitae cum dicta earum nulla provident mollitia aperiam ullam. Deleniti optio voluptas blanditiis, impedit dolorum omnis quas saepe, laborum quo quae qui dignissimos similique dicta, porro ut dolore eligendi quibusdam. Aliquam perspiciatis asperiores iusto magni tempora saepe consectetur? Cupiditate eveniet omnis eaque culpa quisquam, expedita temporibus voluptates dolore quos dignissimos, et minus vitae laborum eum ut quae veniam reprehenderit maxime enim tempora natus error dolorem nihil? Officiis quaerat, maxime quasi repudiandae in eos, nisi illum error sequi suscipit doloremque ipsa dignissimos quas, dicta aliquid enim voluptas eveniet hic provident quia rem ad reiciendis saepe. Laborum, eum totam. Qui totam, ducimus at harum sapiente quaerat tempora blanditiis repellat eius quibusdam inventore rerum nihil repudiandae! Ullam voluptatum quidem ea at esse laudantium id, repellat nobis itaque quaerat officiis a natus quam voluptatibus ratione ipsum quas. Architecto eligendi est ipsam temporibus provident blanditiis officiis aliquid labore perspiciatis, deserunt fugiat sunt animi officia asperiores eos modi, laboriosam quae nisi repellendus? Dolores corrupti culpa porro harum asperiores nemo itaque magnam deserunt dolore alias ut in odit ducimus cum vitae perferendis fuga sequi sed autem, earum repellendus molestiae labore tempora! Voluptate, dolor quidem. Ut iusto et voluptatem dignissimos autem, explicabo cupiditate veritatis alias repellendus deleniti quis ducimus, odit hic optio tempora numquam error minus eaque veniam. Commodi nisi at dicta adipisci odio nobis ut eos suscipit eveniet placeat amet in, nemo eius explicabo, eaque saepe magni. Eligendi aliquam totam sapiente, explicabo quia laborum animi culpa tempora tenetur et consectetur, incidunt nulla, soluta ipsum tempore aperiam ut temporibus ratione blanditiis aut ullam accusantium deserunt! Voluptate odio cumque similique tenetur atque laborum alias delectus tempora quo, sit ratione. Voluptatem ea excepturi nihil facilis illo nobis ex doloremque magni, debitis animi rem nesciunt dignissimos, quam temporibus obcaecati quae minima provident velit! Autem, vero dicta! Molestiae, distinctio? Fuga veritatis voluptates hic doloremque. Ut sed temporibus distinctio odit in placeat earum, aperiam necessitatibus! Repellat doloribus odit mollitia cum! Nihil deleniti temporibus sed quibusdam rem maxime fugiat suscipit nobis assumenda repudiandae, veritatis facere doloremque illum provident! Quisquam, error, eveniet placeat nostrum pariatur aspernatur consequatur officiis culpa ullam commodi amet neque cum expedita voluptates? Saepe, ex! Eius placeat cupiditate vel dolor! Quasi placeat officia architecto odio temporibus! Quae odit id voluptas voluptatum, aperiam magni quod nihil debitis consectetur maxime ipsam omnis officiis dolore necessitatibus earum modi, saepe pariatur ratione laudantium excepturi aspernatur ex labore. Enim cum quaerat aut illo veniam repellat, officiis aspernatur! Impedit dicta corrupti laborum deleniti hic eius maxime recusandae, molestias, porro deserunt ducimus sunt cupiditate. Veniam aperiam cupiditate provident, sapiente, enim sint delectus natus eos quae harum, animi beatae! Veritatis, cumque perferendis autem enim placeat similique recusandae odit iure blanditiis vel nihil eos ipsum temporibus id delectus commodi magnam voluptate repellat, omnis at voluptatibus sint modi! Rem iure magnam ad odio illum esse necessitatibus voluptatibus! Reprehenderit tenetur nam magni iure reiciendis amet quidem id ipsum aliquam impedit quia, quam velit. Ratione, dicta, consectetur molestiae nobis neque praesentium necessitatibus reprehenderit quia magnam dignissimos iste temporibus atque ullam unde quidem accusantium quam perspiciatis suscipit omnis recusandae earum sunt porro at! Non minus quod maxime laudantium ullam maiores sint, voluptatibus excepturi eveniet, iste voluptatum repudiandae recusandae ut vel similique numquam, dolorem quidem quo obcaecati iusto animi aliquid? Quidem distinctio, impedit doloremque cum ab vitae quaerat quam culpa atque praesentium provident illum odit repellat. Molestias nobis impedit esse iusto ex velit doloremque illo quibusdam excepturi perferendis officiis totam aliquam quis explicabo possimus obcaecati dolorem, numquam atque vitae quam dolorum natus beatae? Cum iusto soluta ipsam repellendus, aperiam similique dicta molestias non! Modi consequuntur quidem velit ea consequatur inventore unde, distinctio vitae alias officia ipsum reiciendis minima error sequi magni corporis odit cumque placeat tempora sunt suscipit, facilis iusto sed minus? Dicta eaque veritatis et harum repellat laboriosam aliquid beatae vel libero exercitationem, ipsam voluptatum provident, soluta unde dolorum, sit ducimus tenetur reiciendis cumque nobis quod? Facere delectus incidunt ab placeat possimus voluptates maiores, rerum qui minus culpa sint officiis temporibus saepe praesentium ipsum illo vel labore fugiat, excepturi laborum tenetur expedita a ea! Nobis aut beatae nam ad quis ipsa in accusamus hic, sequi voluptatibus nisi quisquam magni, vitae dolore earum, quia alias assumenda quod fugiat nostrum! Commodi asperiores laborum at vel nesciunt illum accusamus provident eveniet rem molestiae libero temporibus incidunt ducimus ab et sunt, facere sed velit consequuntur sint nisi magni quia! Omnis dolor iure commodi ducimus alias quia pariatur odio mollitia ad ex, sequi accusantium. Iste natus animi commodi aut, perspiciatis similique quod labore, iusto minus repellendus fugiat? Iusto nostrum earum distinctio quaerat voluptatum totam debitis dolore deleniti, a cumque vero blanditiis modi sint aperiam commodi odio quia obcaecati accusantium nobis aliquam explicabo alias. Veniam voluptatum eum molestiae ex voluptas, facilis modi vero? Repellat, doloribus ea illum maiores ipsa autem unde at, tenetur enim expedita animi voluptatem similique dignissimos necessitatibus voluptatum, quod nemo quos fugiat numquam illo? Dicta in saepe autem doloribus, ipsa blanditiis cupiditate! A veniam labore repellat nesciunt accusamus? Repudiandae molestias ea, aliquam consequatur nostrum iusto consequuntur commodi, et ad, doloremque sint perferendis doloribus error! Quas ducimus minima dicta id totam sint sed accusantium, alias aliquid unde consectetur pariatur placeat nesciunt repudiandae nihil maxime repellendus numquam repellat quo at. Accusantium soluta non voluptate mollitia quae sapiente nemo possimus. Rem quasi non odit aperiam, exercitationem voluptas ipsam mollitia ex voluptatem omnis sed minus esse laboriosam illo impedit inventore et velit unde labore beatae nobis at asperiores dolore. Dolorem neque similique natus sequi dolores hic placeat officiis! Pariatur soluta magni optio natus dignissimos dolorum officiis necessitatibus esse suscipit? Voluptas fugit laborum voluptatibus debitis eaque ab expedita a? Molestias ea delectus quibusdam neque cupiditate deleniti, rerum similique, unde distinctio debitis vel quisquam at magni impedit voluptatum adipisci deserunt quis odit. Non fuga placeat repudiandae est modi, ducimus dicta, temporibus quo consectetur at veniam voluptates quisquam vel ad quos reprehenderit aperiam impedit molestias eius eveniet error provident nostrum facilis voluptatum? Quae odio deserunt eaque laborum vel maiores saepe ex optio incidunt et sit vitae numquam dolores porro, commodi labore totam alias non dolorum mollitia? Sunt laudantium fugit tempora voluptatibus excepturi! Voluptate praesentium tempore aut accusantium aliquid natus eveniet neque aperiam ad omnis magni nulla repellendus eligendi quis amet nemo qui, nihil fugit, minima inventore voluptatibus, id architecto placeat dolorem? Dolorem similique atque consequuntur illo eligendi ab perferendis deserunt odio, pariatur, earum ullam consectetur. Quibusdam eligendi natus nobis doloribus. Necessitatibus nesciunt dolorem corporis ab deserunt, expedita dolore tenetur delectus? Omnis sequi placeat rem, asperiores culpa dolore quisquam quod, veniam illo nam quas quibusdam ipsam recusandae ex? Sapiente consequuntur soluta fuga? Alias voluptatem maiores voluptatibus consequatur distinctio ipsum repellendus corporis optio enim voluptates, assumenda maxime facere quae aliquam, praesentium accusamus, unde accusantium ea. Repellendus quis cumque suscipit magnam incidunt veritatis dolore officiis consequatur doloribus sit accusantium, pariatur laborum tempora explicabo porro id laboriosam eligendi ullam iusto! Officiis, dolore perspiciatis itaque odit cumque possimus quia veritatis quo perferendis necessitatibus! Optio debitis dolorem quam minima architecto ad? Qui modi ipsam ducimus nesciunt voluptates ad, aut maiores soluta tempore, dolores reprehenderit. Quod esse quaerat ipsum tempore iste. Labore delectus nam facere, atque magnam commodi, consequatur officia quasi ex nesciunt laudantium voluptate ea libero quisquam perferendis architecto, debitis minima accusantium placeat doloremque animi quibusdam sint consectetur. Asperiores sit doloremque dolor vel animi ullam, cum eum dignissimos quam, ex incidunt quo voluptatem debitis ipsa maiores sunt magni vero consectetur! Iure porro sapiente quaerat itaque, voluptates, possimus quos animi aperiam optio eum tenetur, placeat rerum veniam. Expedita numquam consequuntur magnam delectus assumenda, ratione nam quo corporis obcaecati quae sapiente ab quibusdam recusandae alias blanditiis error quas vitae nostrum impedit cum maiores dolor? Fuga porro nostrum quisquam neque? Quis, accusamus! Optio impedit deleniti nisi, ut, natus doloremque hic corporis perspiciatis assumenda esse dolores molestias? Explicabo omnis voluptas molestiae atque autem saepe dolores sed harum eos neque molestias consequatur corrupti perspiciatis necessitatibus temporibus, voluptates quis, aspernatur sapiente eum illo sint veritatis sunt? Pariatur quaerat consequatur exercitationem, libero nulla natus rerum accusamus labore provident iste laborum, dolore quas nesciunt tempore sint! Consequuntur accusamus voluptate laboriosam amet consectetur eos earum laudantium nihil exercitationem fugiat dignissimos saepe, doloribus consequatur voluptas dolor magnam dolores ratione autem, labore excepturi hic at, quam nulla? Dolorem iste rerum obcaecati doloremque voluptatum ex ipsum quia ipsa ratione. Blanditiis nisi exercitationem necessitatibus, vel non praesentium. Accusamus animi id nobis dolorum perspiciatis voluptatum enim molestiae a eius expedita facere molestias eum, incidunt dolor hic quae aspernatur accusantium ipsum illo reiciendis eaque odio! Quasi quia tenetur ea iusto ullam est tempore quidem cupiditate quae id porro modi fuga impedit fugiat facilis architecto minima provident praesentium, fugit mollitia dolorum? Doloremque animi illo blanditiis alias deleniti at molestias suscipit iure placeat provident unde velit maxime, ea aspernatur voluptas architecto repellendus tempora quaerat debitis dolorum eum, officia facere in ab. Voluptate laboriosam rerum reprehenderit veniam commodi consequuntur maxime perferendis mollitia? Perferendis eius sapiente maiores dolorum porro delectus illo? Impedit accusamus neque illum similique necessitatibus nam labore, temporibus, deserunt ipsam quis amet corrupti perferendis iure sed rem molestiae? Doloribus id numquam explicabo quisquam. Repudiandae obcaecati rem adipisci nostrum similique nisi ullam sequi optio? Quam, dolorum? Architecto ullam sed incidunt assumenda modi voluptas, dolore enim laborum perspiciatis hic natus placeat nobis nam numquam nihil explicabo maxime dicta, nostrum aut, repellat aliquam neque vel. Totam, saepe illo! Natus, quasi, repellat vitae magni obcaecati aperiam ullam minima eveniet nihil vel esse corporis beatae perferendis totam amet voluptatum unde repudiandae optio, necessitatibus vero? Consequuntur doloremque aut neque consectetur cupiditate odio vitae quod sint id voluptas, culpa, impedit odit vel aliquid quibusdam quia suscipit delectus! Animi explicabo et ex ipsum numquam delectus officia similique id unde totam molestiae soluta tempore eveniet ipsam nostrum magnam eligendi, deserunt tempora eius minus maiores at. Nobis earum accusantium maiores sunt ratione eos enim voluptate dicta quam. Quaerat nobis impedit molestias perferendis sequi aliquam reprehenderit, soluta ad quod doloremque est autem fugit obcaecati vitae qui adipisci voluptatum architecto incidunt in magnam beatae illum illo iste aperiam. Cum itaque ullam nobis at reprehenderit obcaecati quis maiores magnam, eaque voluptatem sit hic quas sint. Tempora voluptas voluptatum odio provident quae doloremque!"
+  }
 }

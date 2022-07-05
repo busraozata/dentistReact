@@ -1,0 +1,64 @@
+@import "../../Styles/variables.scss";
+@import "../../Styles/mixin.scss";
+.services-page {
+    padding: 5rem 2rem;
+
+    @include breakpoint(lg) {
+        padding: 2rem 1rem;
+    }
+
+    h6 {
+        @include h6;
+    }
+
+    h3 {
+        @include h3;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        @include card;
+
+        .button {
+            color: var(--color-light-blue);
+            margin-top: 1rem;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+
+            .top {
+                a {
+                    .card-img-top {
+                        transform: rotate(2deg) scale(1.2);
+                    }
+                }
+
+                .icon {
+                    a {
+                        background-color: var(--color-light-blue);
+
+                        img {
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+            }
+
+            .card-body {
+                background-color: var(--color-light-blue);
+
+                .card-title,
+                p {
+                    color: var(--color-white);
+                }
+
+                .button {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+}

@@ -12,16 +12,16 @@ export default function AboutSidebar() {
           </Link>
         </li>
         <li>
-          <Link to="/">Neden Biz</Link>
+          <Link to="/why-us">Neden Biz</Link>
         </li>
         <li>
-          <Link to="/">Polikliniğimiz</Link>
+          <Link to="/polyclinic">Polikliniğimiz</Link>
         </li>
         <li>
-          <Link to="/">İnsan Kaynakları</Link>
+          <Link to="/human-resources">İnsan Kaynakları</Link>
         </li>
         <li>
-          <Link to="/">KVKK</Link>
+          <Link to="/kvkk">KVKK</Link>
         </li>
       </ul>
     </div>

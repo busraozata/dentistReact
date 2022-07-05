@@ -1,11 +1,11 @@
 import React from "react";
-import HeadTitle from "../../Common/HeadTitle/HeadTitle";
-import AboutSidebar from "../../Layouts/AboutSidebar/AboutSidebar";
-import HomeDoctor from "../Home/HomeDoctor/HomeDoctor";
 import "./About.scss";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import HeadTitle from "../../../Common/HeadTitle/HeadTitle";
+import AboutSidebar from "../../../Layouts/AboutSidebar/AboutSidebar";
+import HomeDoctor from "../../Home/HomeDoctor/HomeDoctor";
 let componentMounted = true;
 
 export default function About() {
@@ -52,7 +52,7 @@ export default function About() {
       <section
         className="parallax"
         style={{
-          backgroundImage: `url(${data.background})`,
+          backgroundImage: `url(${`./images/full-equiped-medical-cabinet.jpg`})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -63,7 +63,7 @@ export default function About() {
             <div className="col-lg-6">
               <div className="img-wrapper">
                 <img
-                  src={data.image}
+                  src="./images/woman-patient-dentist.jpg"
                   className="img-fluid"
                   alt=""
                 />
@@ -73,10 +73,16 @@ export default function About() {
               <div className="content d-flex justify-content-between flex-column h-100">
                 <div>
                   <h3>
-                    {data.subTitle}
+                    Üst düzey hasta memnuniyeti ve kişiselleştirilmiş tedaviler
                   </h3>
                   <p>
-                    {data.desc3}
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, rerum, commodi nemo maiores non earum velit suscipit
+                    id quas ducimus maxime veritatis est? Ut, facere
+                    exercitationem sapiente ducimus esse a voluptatem magnam.
+                    Provident recusandae doloremque veniam aliquid incidunt
+                    maiores. Tempore repellendus alias deserunt reiciendis error
+                    minus facere pariatur, voluptate illum.
                   </p>
                 </div>
                 <div className="button-area">

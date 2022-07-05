@@ -230,7 +230,7 @@
                     max-width: 8rem;
                     object-fit: cover;
 
-                    @media screen and(max-width:$sm-breakpoint) {
+                    @include breakpoint(sm) {
                         max-width: 6rem;
                     }
                 }

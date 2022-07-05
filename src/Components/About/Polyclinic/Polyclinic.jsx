@@ -1,28 +1,24 @@
 import React from "react";
 import HeadTitle from "../../../Common/HeadTitle/HeadTitle";
 import AboutSidebar from "../../../Layouts/AboutSidebar/AboutSidebar";
-import "./WhyUs.scss";
+import "./Polyclinic.scss";
+import { useEffect } from "react";
+import PolyclinicCard from "./PolyclinicCard";
 import axios from "axios";
 import { useState } from "react";
-import { useEffect } from "react";
-import AboutBox from "../AboutBox/AboutBox";
 import HomeDoctor from "../../Home/HomeDoctor/HomeDoctor";
 let componentMounted = true;
-export default function WhyUs() {
+
+export default function Polyclinic() {
   const [data, setData] = useState([]);
-  const [Aboutdata, setAboutData] = useState([]);
 
   useEffect(() => {
     const getData = async () => {
-      const response = await axios.get("http://localhost:3000/WhyUs");
-      /* ------------------------------------------------------------------ */
-      const responseAbout = await axios.get("http://localhost:3000/AboutBox");
+      const response = await axios.get("http://localhost:3000/Polyclinic");
+
       if (componentMounted) {
         setData(await response.data);
         console.log(response.data);
-        /* ------------------------------------------------------------------ */
-        setAboutData(await responseAbout.data);
-        console.log(responseAbout.data);
       }
       return () => {
         componentMounted = false;
@@ -31,28 +27,27 @@ export default function WhyUs() {
 
     getData();
   }, []);
-
   return (
     <>
       <HeadTitle />
-      <section class="why-us">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
+      <section className="polyclinic">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3">
               <AboutSidebar />
             </div>
-            <div class="col-lg-9">
-              <div class="content">
-                <h3>{data.title} </h3>
-                <div class="row">
-                  {Aboutdata.map((value, index) => {
+            <div className="col-lg-9">
+              <div className="content">
+                <h3>Poliklinik</h3>
+                <div className="row">
+                  {data.map((value, id) => {
                     return (
-                      <div className="col-lg-6 col-md-6" key={index}>
-                        <AboutBox {...value} />
-                      </div>
+                      <PolyclinicCard
+                        images={value.image}
+                        key={id}
+                      />
                     );
                   })}
-                  <p>{data.desc}</p>
                 </div>
               </div>
             </div>
@@ -81,8 +76,8 @@ export default function WhyUs() {
               </a>
             </div>
             <div className="col-lg-3 mb-2">
-              <a href="services.html" class="button">
-                <i class="fa-solid fa-tooth"></i>Tedavilerimiz
+              <a href="services.html" className="button">
+                <i className="fa-solid fa-tooth"></i>Tedavilerimiz
               </a>
             </div>
             <div className="col-lg-3 mb-2">

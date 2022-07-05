@@ -1,0 +1,44 @@
+@import "../../../Styles/variables.scss";
+@import "../../../Styles/mixin.scss";
+.fancybox__container {
+    z-index: 99999999 !important;
+}
+.polyclinic {
+    .content {
+        padding-left: 1rem;
+
+        @include breakpoint(lg) {
+            padding-left: 0rem;
+            margin-top: 2rem;
+        }
+
+        img {
+            height: 19rem;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .img-wrapper {
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            &::before {
+                height: 100%;
+            }
+        }
+
+        &::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.555);
+            position: absolute;
+            height: 0%;
+            width: 100%;
+            transition: 0.5s all;
+        }
+    }
+}
+.parallax {
+    padding: 3rem 2rem !important;
+}

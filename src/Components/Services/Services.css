@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+.services-page {
+  padding: 5rem 2rem;
+}
+
+@media (max-width: 991px) {
+  .services-page {
+    padding: 2rem 1rem;
+  }
+}
+
+.services-page h6 {
+  color: var(--color-light-blue);
+  color: var(--color-gray-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .services-page h6 {
+    font-size: 1rem;
+  }
+}
+
+.services-page h3 {
+  color: var(--color-light-blue);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .services-page h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.services-page .card {
+  border-bottom: 1px solid var(--color-light-blue);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border: none;
+}
+
+.services-page .card .top {
+  position: relative;
+  overflow: hidden;
+}
+
+.services-page .card .top a {
+  overflow: hidden;
+}
+
+.services-page .card .top a .card-img-top {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  height: 24rem;
+}
+
+.services-page .card .top .icon {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.services-page .card .top .icon a {
+  border-radius: 50%;
+  background-color: var(--color-white);
+  height: 5rem;
+  width: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 2px 27px -10px rgba(0, 0, 0, 0.55);
+          box-shadow: 0px 2px 27px -10px rgba(0, 0, 0, 0.55);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+@media (max-width: 991px) {
+  .services-page .card .top .icon a {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+.services-page .card .top .icon a img {
+  max-width: 2.6rem;
+  z-index: 999;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .services-page .card .top .icon a img {
+    max-width: 2.5rem;
+  }
+}
+
+.services-page .card .card-body {
+  padding: 2.5rem 2rem;
+  -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  border-bottom: 1px solid var(--color-light-blue);
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+  height: 18rem;
+}
+
+.services-page .card .card-body .card-title {
+  color: var(--color-light-blue);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .services-page .card .card-body .card-title {
+    font-size: 1.4rem;
+  }
+}
+
+.services-page .card .card-body p {
+  color: var(--color-gray-text);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .services-page .card .card-body p {
+    font-size: 0.9rem;
+  }
+}
+
+.services-page .card .button {
+  color: var(--color-light-blue);
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.services-page .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.services-page .card:hover .top a .card-img-top {
+  -webkit-transform: rotate(2deg) scale(1.2);
+          transform: rotate(2deg) scale(1.2);
+}
+
+.services-page .card:hover .top .icon a {
+  background-color: var(--color-light-blue);
+}
+
+.services-page .card:hover .top .icon a img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.services-page .card:hover .card-body {
+  background-color: var(--color-light-blue);
+}
+
+.services-page .card:hover .card-body .card-title,
+.services-page .card:hover .card-body p {
+  color: var(--color-white);
+}
+
+.services-page .card:hover .card-body .button {
+  color: var(--color-white);
+}
+/*# sourceMappingURL=Services.css.map */

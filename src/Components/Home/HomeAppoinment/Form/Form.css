@@ -52,7 +52,6 @@
   font-size: 1.2rem;
   border-radius: 0;
   margin-top: 1rem;
-  color: var(--white) !important;
 }
 
 .form form button::before, .form form button::after {

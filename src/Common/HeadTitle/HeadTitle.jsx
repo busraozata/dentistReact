@@ -7,7 +7,7 @@ export default function HeadTitle() {
   return (
     <section
       style={{
-        backgroundImage: `url(${`./images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg`})`,
+        backgroundImage: `url(${`/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg`})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",

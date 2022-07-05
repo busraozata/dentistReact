@@ -1,5 +1,5 @@
 import React from "react";
-import AboutBox from "../../About/AboutBox";
+import AboutBox from "../../About/AboutBox/AboutBox";
 import "./HomeAbout.scss";
 import axios from "axios";
 import { useState } from "react";

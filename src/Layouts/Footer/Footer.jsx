@@ -234,7 +234,7 @@ export default function Footer() {
               <span>Copyright © 2022 Smile Design House</span>
               <a href="/">
                 <img
-                  src="./images/wucize.png"
+                  src="/images/wucize.png"
                   className="img-fluid"
                   alt="wucize"
                 />

@@ -5,7 +5,7 @@ import TopHeader from "./TopHeader/TopHeader";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [image, setImage] = useState("./images/woman-patient-dentist-(2).jpg");
+  const [image, setImage] = useState("/images/woman-patient-dentist-(2).jpg");
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   window.onscroll = () => {
@@ -30,7 +30,7 @@ export default function Header() {
         <div className="container">
           <div className="header-area d-flex align-items-center justify-content-between">
             <Link className="navbar-brand" to="/">
-              <img src="./images/logo.png" className="img-fluid" alt="logo" />
+              <img src="/images/logo.png" className="img-fluid" alt="logo" />
             </Link>
             <button
               className={`hamburger d-lg-none d-block ${
@@ -45,7 +45,7 @@ export default function Header() {
             </button>
             <div className={`menu-area ${menuOpen ? "active" : ""}`}>
               <Link className="navbar-brand d-lg-none d-block" to="/">
-                <img src="./images/logo.png" className="img-fluid" alt="logo" />
+                <img src="/images/logo.png" className="img-fluid" alt="logo" />
               </Link>
               <ul className="menu d-flex align-items-center justify-content-center">
                 <li className="nav-item">
@@ -69,13 +69,13 @@ export default function Header() {
                       <Link to="/why-us">Neden Biz</Link>
                     </li>
                     <li className="dropdown-item">
-                      <Link to="/">Polikliniğimiz</Link>
+                      <Link to="/polyclinic">Polikliniğimiz</Link>
                     </li>
                     <li className="dropdown-item">
-                      <Link to="/">İnsan Kaynakları</Link>
+                      <Link to="/human-resources">İnsan Kaynakları</Link>
                     </li>
                     <li className="dropdown-item">
-                      <Link to="/">KVKK</Link>
+                      <Link to="/kvkk">KVKK</Link>
                     </li>
                   </ul>
                 </li>
@@ -83,7 +83,7 @@ export default function Header() {
                 <li className="nav-item">
                   <Link
                     className="nav-link"
-                    to="services.html"
+                    to="/services"
                     id="defaultDropdown"
                   >
                     Tedavilerimiz
@@ -103,7 +103,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/woman-patient-dentist.jpg"
+                              "/images/woman-patient-dentist.jpg"
                             )}
                           >
                             <Link to="/">Öncesi & Sonrası</Link>
@@ -111,7 +111,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/revealing-shot-empty-orthodontic-office.jpg"
+                              "/images/revealing-shot-empty-orthodontic-office.jpg"
                             )}
                           >
                             <Link to="/">İmplant Diş</Link>
@@ -119,7 +119,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/woman-patient-dentist-(2).jpg"
+                              "/images/woman-patient-dentist-(2).jpg"
                             )}
                           >
                             <Link to="/#">Ortodonti</Link>
@@ -127,7 +127,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+                              "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
                             )}
                           >
                             <Link to="/#">Diş Temizliği </Link>
@@ -135,7 +135,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+                              "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
                             )}
                           >
                             <Link to="/#">Diş Temizliği </Link>
@@ -143,7 +143,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/revealing-shot-empty-orthodontic-office.jpg"
+                              "/images/revealing-shot-empty-orthodontic-office.jpg"
                             )}
                           >
                             <Link to="/#">Sterilizasyon </Link>
@@ -151,7 +151,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/woman-patient-dentist-(2).jpg"
+                              "/images/woman-patient-dentist-(2).jpg"
                             )}
                           >
                             <Link to="/#">Porcelen Diş Teli </Link>
@@ -159,7 +159,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/woman-patient-dentist.jpg"
+                              "/images/woman-patient-dentist.jpg"
                             )}
                           >
                             <Link to="/">Öncesi & Sonrası</Link>
@@ -167,7 +167,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/revealing-shot-empty-orthodontic-office.jpg"
+                              "/images/revealing-shot-empty-orthodontic-office.jpg"
                             )}
                           >
                             <Link to="/">İmplant Diş</Link>
@@ -175,7 +175,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+                              "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
                             )}
                           >
                             <Link to="/#">Ortodonti</Link>
@@ -183,7 +183,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/woman-patient-dentist.jpg"
+                              "/images/woman-patient-dentist.jpg"
                             )}
                           >
                             <Link to="/#">Diş Beyazlatma </Link>
@@ -192,7 +192,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/woman-patient-dentist-(2).jpg"
+                              "/images/woman-patient-dentist-(2).jpg"
                             )}
                           >
                             <Link to="/#">Diş Temizliği </Link>
@@ -200,7 +200,7 @@ export default function Header() {
                           <li
                             className="dropdown-item"
                             onMouseEnter={handleMouseEnter(
-                              "./images/revealing-shot-empty-orthodontic-office.jpg"
+                              "/images/revealing-shot-empty-orthodontic-office.jpg"
                             )}
                           >
                             <Link to="/#">Sterilizasyon </Link>

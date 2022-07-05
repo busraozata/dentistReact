@@ -64,7 +64,7 @@ export default function HomeServices() {
                           {slide.subTitle}
                         </span>
                       </h4>
-                      <p>{slide.description}</p>
+                      <p>{slide.shortDescription}</p>
                       <div className="d-lg-flex align-items-center justify-content-start">
                         <div className="expert d-flex align-items-center justify-content-between">
                           <div className="cicon-area">
