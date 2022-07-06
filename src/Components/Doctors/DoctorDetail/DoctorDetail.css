@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+.doctors-detail {
+  padding: 5rem 2rem;
+}
+
+@media (max-width: 991px) {
+  .doctors-detail {
+    padding: 2rem 1rem;
+  }
+}
+
+.doctors-detail h6 {
+  color: var(--color-light-blue);
+  color: var(--color-gray-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .doctors-detail h6 {
+    font-size: 1rem;
+  }
+}
+
+.doctors-detail h3 {
+  color: var(--color-light-blue);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .doctors-detail h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.doctors-detail .img-wrapper {
+  cursor: pointer;
+  position: relative;
+}
+
+.doctors-detail .img-wrapper:hover::before {
+  height: 100%;
+}
+
+.doctors-detail .img-wrapper::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.555);
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.doctors-detail .gallery-item {
+  height: 15rem;
+  width: 100%;
+}
+/*# sourceMappingURL=DoctorDetail.css.map */

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+.appoinment-page {
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .appoinment-page {
+    padding: 2rem 1rem;
+  }
+}
+
+.appoinment-page h6 {
+  color: var(--color-light-blue);
+  color: var(--color-gray-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .appoinment-page h6 {
+    font-size: 1rem;
+  }
+}
+
+.appoinment-page h3 {
+  color: var(--color-light-blue);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .appoinment-page h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .appoinment-page form .button-area {
+    margin-bottom: 2rem;
+  }
+}
+
+.appoinment-page form .button-area .button {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 0;
+  color: var(--color-light-blue);
+  border-color: var(--color-light-blue);
+}
+
+.appoinment-page form .button-area .button::before, .appoinment-page form .button-area .button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid var(--color-white);
+  width: 1em;
+  height: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.appoinment-page form .button-area .button:before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+}
+
+.appoinment-page form .button-area .button:after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+
+.appoinment-page form .button-area .button:hover:before, .appoinment-page form .button-area .button:hover::after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.appoinment-page form .button-area .button::before, .appoinment-page form .button-area .button::after {
+  border-color: var(--color-light-blue);
+}
+
+@media (max-width: 991px) {
+  .appoinment-page form .button-area .button {
+    font-size: 1rem;
+  }
+}
+
+.appoinment-page form .bootstrap-datetimepicker-widget table th {
+  height: 40px;
+}
+
+.appoinment-page form span {
+  color: var(--color-gray-text);
+  font-size: 0.8rem;
+}
+
+.appoinment-page form .form-control,
+.appoinment-page form .form-select {
+  padding: 0.7rem 0rem 0.7rem 1.2rem;
+  border: none;
+  border-bottom: 1px solid var(--color-light-blue);
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--color-gray-text);
+}
+
+.appoinment-page form .form-control:focus,
+.appoinment-page form .form-select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.appoinment-page form .form-check {
+  margin-right: 2rem;
+}
+
+.appoinment-page form .form-check .form-check-input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.appoinment-page form textarea {
+  resize: none;
+}
+/*# sourceMappingURL=Appoinment.css.map */

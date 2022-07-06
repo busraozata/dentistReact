@@ -1,0 +1,42 @@
+@import "../../../Styles/variables.scss";
+@import "../../../Styles/mixin.scss";
+.doctors-detail {
+    padding: 5rem 2rem;
+
+    @include breakpoint(lg) {
+        padding: 2rem 1rem;
+    }
+
+    h6 {
+        @include h6;
+    }
+
+    h3 {
+        @include h3;
+        margin-bottom: 1.5rem;
+    }
+    .img-wrapper {
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            &::before {
+                height: 100%;
+            }
+        }
+
+        &::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.555);
+            position: absolute;
+            height: 0%;
+            width: 100%;
+            transition: 0.5s all;
+        }
+    }
+    .gallery-item {
+        height: 15rem;
+        width: 100%;
+       
+    }
+}

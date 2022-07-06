@@ -1,5 +1,5 @@
 import React from "react";
-import DoctorBox from "../../Doctors/DoctorBox";
+import DoctorBox from "../../Doctors/DoctorBox/DoctorBox";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
@@ -8,6 +8,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import "./HomeDoctor.scss";
+import { Link } from "react-router-dom";
 let componentMounted = true;
 
 export default function HomeDoctor() {
@@ -38,9 +39,9 @@ export default function HomeDoctor() {
               <h3>Tasarım Ekibimiz</h3>
             </div>
             <div className="button-area">
-              <a href="doctors.html" className="button">
+              <Link to="/doctors" className="button">
                 Devamını Gör
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-12">

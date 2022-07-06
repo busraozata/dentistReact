@@ -1,28 +1,28 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function DoctorBox(props) {
   return (
     <div className="card">
       <div className="top">
-        <a href="/#">
+        <Link to={`/doctor-detail/${props.id}`}>
           <img src={props.image} className="card-img-top" alt={props.name} />
-        </a>
-        <a href="/#">
+        </Link>
+        <Link to={`/doctor-detail/${props.id}`}>
           <div className="overlay">
             <i className="fa-solid fa-link"></i>
           </div>
-        </a>
+        </Link>
       </div>
       <div className="card-body d-flex justify-content-between align-items-center">
         <div className="user-info">
-          <a href="/#">
+          <Link to={`/doctor-detail/${props.id}`}>
             <h5 className="card-title">{props.name}</h5>
-          </a>
+          </Link>
           <span>{props.title}</span>
         </div>
-        <a href="/#" className="button">
+        <Link to={`/doctor-detail/${props.id}`} className="button">
           <i className="fa-solid fa-chevron-right"></i>
-        </a>
+        </Link>
       </div>
     </div>
   );

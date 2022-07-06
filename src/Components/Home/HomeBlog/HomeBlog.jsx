@@ -37,9 +37,9 @@ export default function HomeBlog() {
             <h3>Güncel Blog Yazılarımız</h3>
           </div>
           <div className="button-area">
-            <a href="blog.html" className="button">
+            <Link to="/blog" className="button">
               Daha Fazlası
-            </a>
+            </Link>
           </div>
         </div>
         <div className="blog-area">
@@ -87,10 +87,10 @@ export default function HomeBlog() {
                         <h5 className="card-title">
                           <a href="blog-detail.html">{slide.title}</a>
                         </h5>
-                        <p className="card-text">{slide.description}</p>
+                        <p className="card-text">{slide.description.substring(0, 90)}...</p>
                       </div>
                       <div className="button-area">
-                        <Link to="/#" className="button">
+                        <Link to={`/blog-detail/${slide.id}`} className="button">
                           <span> Daha Fazlası </span>
                           <i className="fa-solid fa-chevron-right"></i>
                         </Link>

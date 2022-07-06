@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-blue: #009fe3;
+  --color-black: #000;
+  --color-gray: #f6f6f6;
+  --color-blue: #eceff1;
+  --color-gray-text: #757575;
+  --color-gray-2: #737575;
+  --color-blue-2: #bbdefb;
+  --color-blue-3: #0d47a1;
+  --color-purple: #7e57c2;
+}
+
+.contact-info {
+  padding-left: 3rem !important;
+}
+
+@media (max-width: 1200px) {
+  .contact-info {
+    padding-left: 1rem;
+  }
+}
+
+.contact-info a {
+  color: var(--color-gray-text);
+}
+
+.contact-info a:hover {
+  color: var(--color-light-blue);
+}
+
+.contact-info p {
+  color: var(--color-gray-text);
+  font-size: 1rem;
+  max-width: 19rem;
+  font-weight: 300;
+}
+
+.contact-info h4 {
+  color: var(--color-light-blue);
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 991px) {
+  .contact-info h4 {
+    font-size: 1.3rem;
+  }
+}
+
+.contact-info .content ul li {
+  margin-right: 1.5rem;
+}
+
+.contact-info .content ul li a {
+  color: var(--color-gray-text);
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contact-info .content ul li a:hover {
+  color: var(--color-light-blue);
+}
+/*# sourceMappingURL=ContactArea.css.map */

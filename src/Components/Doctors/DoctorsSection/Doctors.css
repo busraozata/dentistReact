@@ -26,17 +26,17 @@
   --color-purple: #7e57c2;
 }
 
-.doctors {
+.doctors-page {
   padding: 5rem 2rem;
 }
 
 @media (max-width: 991px) {
-  .doctors {
+  .doctors-page {
     padding: 2rem 1rem;
   }
 }
 
-.doctors .title h6 {
+.doctors-page h6 {
   color: var(--color-light-blue);
   color: var(--color-gray-text);
   font-size: 1.3rem;
@@ -44,117 +44,25 @@
 }
 
 @media (max-width: 1200px) {
-  .doctors .title h6 {
+  .doctors-page h6 {
     font-size: 1rem;
   }
 }
 
-.doctors .title h3 {
+.doctors-page h3 {
   color: var(--color-light-blue);
   font-weight: 700;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 1200px) {
-  .doctors .title h3 {
+  .doctors-page h3 {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 991px) {
-  .doctors .title .button-area {
-    margin: 2rem 0rem;
-  }
-}
-
-.doctors .title .button-area .button {
-  position: relative;
-  padding: 0.5rem 1rem;
-  background-color: transparent;
-  color: var(--color-white);
-  border: 1px solid var(--color-white);
-  margin-top: 2rem;
-  font-weight: 500;
-  font-size: 1.2rem;
-  border-radius: 0;
-  color: var(--color-light-blue);
-  border-color: var(--color-light-blue);
-}
-
-.doctors .title .button-area .button::before, .doctors .title .button-area .button::after {
-  content: "";
-  display: block;
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid var(--color-white);
-  width: 1em;
-  height: 1em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  z-index: 5;
-}
-
-.doctors .title .button-area .button:before {
-  top: -6px;
-  left: -6px;
-  border-width: 2px 0 0 2px;
-}
-
-.doctors .title .button-area .button:after {
-  bottom: -6px;
-  right: -6px;
-  border-width: 0 2px 2px 0;
-}
-
-.doctors .title .button-area .button:hover:before, .doctors .title .button-area .button:hover::after {
-  width: calc(100% + 12px);
-  height: calc(100% + 12px);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.doctors .title .button-area .button::before, .doctors .title .button-area .button::after {
-  border-color: var(--color-light-blue);
-}
-
-@media (max-width: 991px) {
-  .doctors .title .button-area .button {
-    font-size: 1rem;
-  }
-}
-
-.doctors .swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.doctors .swiper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.doctors .swiper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.doctors .swiper .swiper-slide .card {
+.doctors-page .card {
   border-bottom: 1px solid var(--color-light-blue);
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -162,22 +70,22 @@
   position: relative;
 }
 
-.doctors .swiper .swiper-slide .card .top {
+.doctors-page .card .top {
   position: relative;
   overflow: hidden;
 }
 
-.doctors .swiper .swiper-slide .card .top a {
+.doctors-page .card .top a {
   overflow: hidden;
 }
 
-.doctors .swiper .swiper-slide .card .top a .card-img-top {
+.doctors-page .card .top a .card-img-top {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   height: 24rem;
 }
 
-.doctors .swiper .swiper-slide .card .top .icon {
+.doctors-page .card .top .icon {
   position: absolute;
   bottom: 1.2rem;
   right: 1.2rem;
@@ -185,7 +93,7 @@
   transition: 0.6s;
 }
 
-.doctors .swiper .swiper-slide .card .top .icon a {
+.doctors-page .card .top .icon a {
   border-radius: 50%;
   background-color: var(--color-white);
   height: 5rem;
@@ -207,13 +115,13 @@
 }
 
 @media (max-width: 991px) {
-  .doctors .swiper .swiper-slide .card .top .icon a {
+  .doctors-page .card .top .icon a {
     height: 5rem;
     width: 5rem;
   }
 }
 
-.doctors .swiper .swiper-slide .card .top .icon a img {
+.doctors-page .card .top .icon a img {
   max-width: 2.6rem;
   z-index: 999;
   -o-object-fit: cover;
@@ -221,12 +129,12 @@
 }
 
 @media (max-width: 991px) {
-  .doctors .swiper .swiper-slide .card .top .icon a img {
+  .doctors-page .card .top .icon a img {
     max-width: 2.5rem;
   }
 }
 
-.doctors .swiper .swiper-slide .card .card-body {
+.doctors-page .card .card-body {
   padding: 2.5rem 2rem;
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
@@ -236,39 +144,44 @@
   height: 18rem;
 }
 
-.doctors .swiper .swiper-slide .card .card-body .card-title {
+.doctors-page .card .card-body .card-title {
   color: var(--color-light-blue);
   font-size: 1.6rem;
   font-weight: 700;
 }
 
 @media (max-width: 991px) {
-  .doctors .swiper .swiper-slide .card .card-body .card-title {
+  .doctors-page .card .card-body .card-title {
     font-size: 1.4rem;
   }
 }
 
-.doctors .swiper .swiper-slide .card .card-body p {
+.doctors-page .card .card-body p {
   color: var(--color-gray-text);
   font-size: 1rem;
   font-weight: 300;
 }
 
 @media (max-width: 991px) {
-  .doctors .swiper .swiper-slide .card .card-body p {
+  .doctors-page .card .card-body p {
     font-size: 0.9rem;
   }
 }
 
-.doctors .swiper .swiper-slide .card .card-body {
-  height: 8rem;
+.doctors-page .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
-.doctors .swiper .swiper-slide .card .card-body .user-info {
+.doctors-page .card .card-body {
+  height: 10rem;
+}
+
+.doctors-page .card .card-body .user-info {
   text-align: left !important;
 }
 
-.doctors .swiper .swiper-slide .card .card-body .button {
+.doctors-page .card .card-body .button {
   position: relative;
   padding: 0.5rem 1rem;
   background-color: transparent;
@@ -286,7 +199,7 @@
   transition: 0.3s all;
 }
 
-.doctors .swiper .swiper-slide .card .card-body .button::before, .doctors .swiper .swiper-slide .card .card-body .button::after {
+.doctors-page .card .card-body .button::before, .doctors-page .card .card-body .button::after {
   content: "";
   display: block;
   position: absolute;
@@ -300,55 +213,55 @@
   z-index: 5;
 }
 
-.doctors .swiper .swiper-slide .card .card-body .button:before {
+.doctors-page .card .card-body .button:before {
   top: -6px;
   left: -6px;
   border-width: 2px 0 0 2px;
 }
 
-.doctors .swiper .swiper-slide .card .card-body .button:after {
+.doctors-page .card .card-body .button:after {
   bottom: -6px;
   right: -6px;
   border-width: 0 2px 2px 0;
 }
 
-.doctors .swiper .swiper-slide .card .card-body .button:hover:before, .doctors .swiper .swiper-slide .card .card-body .button:hover::after {
+.doctors-page .card .card-body .button:hover:before, .doctors-page .card .card-body .button:hover::after {
   width: calc(100% + 12px);
   height: calc(100% + 12px);
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.doctors .swiper .swiper-slide .card .card-body .button::before, .doctors .swiper .swiper-slide .card .card-body .button::after {
+.doctors-page .card .card-body .button::before, .doctors-page .card .card-body .button::after {
   border-color: var(--color-light-blue);
-  display: none !important;
+  display: none;
 }
 
-.doctors .swiper .swiper-slide .card .card-body .button:hover {
+.doctors-page .card .card-body .button:hover {
   margin-right: 1rem;
 }
 
-.doctors .swiper .swiper-slide .card .card-body .button i {
+.doctors-page .card .card-body .button i {
   font-size: 1.5rem;
 }
 
-.doctors .swiper .swiper-slide .card .top {
+.doctors-page .card .top {
   position: relative;
   display: block;
 }
 
-.doctors .swiper .swiper-slide .card .top:hover {
+.doctors-page .card .top:hover {
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
 }
 
-.doctors .swiper .swiper-slide .card .top:hover .overlay {
+.doctors-page .card .top:hover .overlay {
   opacity: 1;
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
 }
 
-.doctors .swiper .swiper-slide .card .top:before {
+.doctors-page .card .top:before {
   content: "";
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(white));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), white);
@@ -363,7 +276,7 @@
   transition: 0.6s;
 }
 
-.doctors .swiper .swiper-slide .card .top .overlay {
+.doctors-page .card .top .overlay {
   position: absolute;
   z-index: 999999;
   height: 100%;
@@ -388,8 +301,8 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #009fe3);
 }
 
-.doctors .swiper .swiper-slide .card .top .overlay i {
+.doctors-page .card .top .overlay i {
   color: var(--color-white);
   font-size: 2rem;
 }
-/*# sourceMappingURL=HomeDoctor.css.map */
+/*# sourceMappingURL=Doctors.css.map */

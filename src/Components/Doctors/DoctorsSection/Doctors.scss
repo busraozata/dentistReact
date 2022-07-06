@@ -1,0 +1,107 @@
+@import "../../../Styles/variables.scss";
+@import "../../../Styles/mixin.scss";
+.doctors-page {
+    padding: 5rem 2rem;
+
+    @include breakpoint(lg) {
+        padding: 2rem 1rem;
+    }
+
+    h6 {
+        @include h6;
+    }
+
+    h3 {
+        @include h3;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        @include card;
+        position: relative;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-body {
+            height: 10rem;
+
+            .user-info {
+                text-align: left !important;
+            }
+
+            .button {
+                @include button;
+                color: var(--color-light-blue);
+                border-color: var(--color-light-blue);
+                margin-top: 0rem;
+                font-size: 1rem;
+                transition: 0.3s all;
+                &::before,
+                &::after {
+                    border-color: var(--color-light-blue);
+                    display: none;
+                }
+                &:hover {
+                    margin-right: 1rem;
+                }
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .top {
+            position: relative;
+            display: block;
+
+            &:hover {
+                transition: 0.6s all;
+
+                .overlay {
+                    opacity: 1;
+                    transition: 0.6s all;
+                }
+            }
+
+            &:before {
+                content: "";
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0), white);
+                width: 100%;
+                height: 100%;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                top: 0;
+                position: absolute;
+                -webkit-transition: 0.6s;
+                transition: 0.6s;
+            }
+
+            .overlay {
+                position: absolute;
+                z-index: 999999;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                opacity: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transition: 0.6s all;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#009fe3));
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #009fe3);
+
+                i {
+                    color: var(--color-white);
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

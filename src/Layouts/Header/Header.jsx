@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./Header.css";
+import "./Header.scss";
 import TopHeader from "./TopHeader/TopHeader";
 import { Link } from "react-router-dom";
 
@@ -54,7 +54,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/#" id="defaultDropdown">
+                  <Link className="nav-link" to="#" id="defaultDropdown">
                     Kurumsal
                   </Link>
 
@@ -212,23 +212,23 @@ export default function Header() {
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
+                  <Link className="nav-link" to="/doctors">
                     Hekimlerimiz
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
+                  <Link className="nav-link" to="/blog">
                     Blog
                   </Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
+                  <Link className="nav-link" to="/contact">
                     İletişim
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
+                  <Link className="nav-link" to="/appoinment">
                     Randevu Al
                   </Link>
                 </li>

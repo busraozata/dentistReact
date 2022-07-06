@@ -1,0 +1,52 @@
+@import "../../../Styles/variables.scss";
+@import "../../../Styles/mixin.scss";
+.contact-info {
+    padding-left: 3rem !important;
+
+    @include breakpoint(xl) {
+        padding-left: 1rem;
+    }
+
+    a {
+        color: var(--color-gray-text);
+
+        &:hover {
+            color: var(--color-light-blue);
+        }
+    }
+
+    p {
+        color: var(--color-gray-text);
+        font-size: 1rem;
+        max-width: 19rem;
+        font-weight: 300;
+    }
+
+    h4 {
+        color: var(--color-light-blue);
+        font-weight: 500;
+        font-size: 1.7rem;
+
+        @include breakpoint(lg) {
+            font-size: 1.3rem;
+        }
+    }
+
+    .content {
+        ul {
+            li {
+                margin-right: 1.5rem;
+
+                a {
+                    color: var(--color-gray-text);
+                    font-size: 1.2rem;
+                    transition: 0.3s all;
+
+                    &:hover {
+                        color: var(--color-light-blue);
+                    }
+                }
+            }
+        }
+    }
+}

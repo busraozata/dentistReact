@@ -82,7 +82,7 @@
 
                 .card-body {
                     text-align: left;
-                    padding: 3rem 2rem;
+                    padding: 2rem 1.5rem;
                     height: 15rem;
 
                     @include breakpoint(lg) {
@@ -113,6 +113,8 @@
                         .button {
                             color: var(--color-light-blue);
                             font-size: 1rem;
+                            border: none;
+                            
 
                             span {
                                 transition: 0.3s all;

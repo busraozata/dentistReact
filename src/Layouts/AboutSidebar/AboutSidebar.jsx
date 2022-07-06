@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutSidebar.scss";
 import { Link } from "react-router-dom";
 
-export default function AboutSidebar() {
+export default function AboutSidebar(props) {
   return (
     <div className="sidebar">
       <ul>

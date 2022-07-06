@@ -90,7 +90,7 @@
                         &::before,
                         &::after {
                             border-color: var(--color-light-blue);
-                            display: none;
+                            display: none !important;
                         }
                         &:hover {
                             margin-right: 1rem;

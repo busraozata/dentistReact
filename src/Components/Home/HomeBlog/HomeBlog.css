@@ -196,7 +196,7 @@
 
 .blog .blog-area .swiper .card .card-body {
   text-align: left;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   height: 15rem;
 }
 
@@ -232,6 +232,7 @@
 .blog .blog-area .swiper .card .card-body .button-area .button {
   color: var(--color-light-blue);
   font-size: 1rem;
+  border: none;
 }
 
 .blog .blog-area .swiper .card .card-body .button-area .button span {
