@@ -183,4 +183,8 @@
   width: 100%;
   position: absolute;
 }
+
+.error {
+  color: red !important;
+}
 /*# sourceMappingURL=Contact.css.map */

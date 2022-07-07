@@ -106,7 +106,7 @@ export default function Header() {
                               "/images/woman-patient-dentist.jpg"
                             )}
                           >
-                            <Link to="/">Öncesi & Sonrası</Link>
+                            <Link to="/before-after">Öncesi & Sonrası</Link>
                           </li>
                           <li
                             className="dropdown-item"

@@ -2,6 +2,7 @@ import React from "react";
 import HeadTitle from "../../../Common/HeadTitle/HeadTitle";
 import AboutSidebar from "../../../Layouts/AboutSidebar/AboutSidebar";
 import HomeDoctor from "../../Home/HomeDoctor/HomeDoctor";
+import FormArea from "./Form/FormArea";
 import "./HumanResources.scss";
 export default function HumanResources() {
   return (
@@ -58,61 +59,7 @@ export default function HumanResources() {
                 <h6>Bize</h6>
                 <h3>Başvurun</h3>
               </div>
-              <div className="form">
-                <form>
-                  <div className="row">
-                    <div className="col-lg-6 mb-4">
-                      <div>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="İsim Soyisim"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                      <div>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Telefon"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="col-lg-6 mb-4">
-                      <div>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Soru Başlığı"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                      <div>
-                        <input
-                          type="email"
-                          className="form-control"
-                          placeholder="E - Mail"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-12 mb-4">
-                      <textarea
-                        className="form-control"
-                        placeholder="Mesaj Yazın"
-                        rows="5"
-                      ></textarea>
-                    </div>
-                    <div className="col-lg-12 mb-4">
-                      <button type="submit" className="btn btn-primary">
-                        GÖNDER
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
+              <FormArea />
             </div>
             <div className="col-lg-6 ">
               <div className="img-wrapper">

@@ -16,8 +16,33 @@
         @include h3;
         margin-bottom: 2rem;
     }
-
+  
     form {
+        .react-datepicker__header {
+            background-color: transparent;
+        }
+        .react-datepicker-popper[data-placement^="top"] {
+            z-index: 99;
+        }
+        .react-datepicker__day--selected,
+        .react-datepicker__day--in-selecting-range,
+        .react-datepicker__day--in-range,
+        .react-datepicker__month-text--selected,
+        .react-datepicker__month-text--in-selecting-range,
+        .react-datepicker__month-text--in-range,
+        .react-datepicker__quarter-text--selected,
+        .react-datepicker__quarter-text--in-selecting-range,
+        .react-datepicker__quarter-text--in-range,
+        .react-datepicker__year-text--selected,
+        .react-datepicker__year-text--in-selecting-range,
+        .react-datepicker__year-text--in-range,
+        .react-datepicker__day--keyboard-selected,
+        .react-datepicker__month-text--keyboard-selected,
+        .react-datepicker__quarter-text--keyboard-selected,
+        .react-datepicker__year-text--keyboard-selected {
+            background-color: var(--color-brown);
+        }
+       
         .button-area {
             @include breakpoint(lg) {
                 margin-bottom: 2rem;

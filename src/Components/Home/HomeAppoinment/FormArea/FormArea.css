@@ -92,4 +92,8 @@
     font-size: 1rem;
   }
 }
-/*# sourceMappingURL=Form.css.map */
+
+.form .Toastify__toast-container {
+  position: absolute;
+}
+/*# sourceMappingURL=FormArea.css.map */

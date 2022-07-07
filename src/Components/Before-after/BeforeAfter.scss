@@ -1,0 +1,35 @@
+@import "../../Styles/variables.scss";
+@import "../../Styles/mixin.scss";
+.before-after-page {
+    .content {
+        padding-left: 1rem;
+
+        @include breakpoint(lg) {
+            padding-left: 0rem;
+            margin-top: 2rem;
+        }
+
+        h2,
+        h3 {
+            @include h3;
+        }
+
+        p {
+            color: var(--color-gray-text);
+            font-weight: 400;
+            font-size: 1rem;
+
+            @include breakpoint(lg) {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    img {
+        height: 23rem;
+
+        @include breakpoint(sm) {
+            height: 13rem;
+        }
+    }
+}

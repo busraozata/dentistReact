@@ -1,6 +1,6 @@
 import React from "react";
 import Faq from "../Faq/Faq";
-import Form from "../Form/Form";
+import FormArea from "../FormArea/FormArea";
 import "./AllItem.scss";
 export default function AllItem() {
   return (
@@ -21,7 +21,7 @@ export default function AllItem() {
               <h6>Uzmana</h6>
               <h3>Danışın</h3>
             </div>
-            <Form />
+            <FormArea/>
           </div>
           <div className="col-lg-6 faq-area">
             <div className="title">

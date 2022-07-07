@@ -52,3 +52,13 @@ html {
         @include sidebar;
     }
 }
+
+.error {
+    color: red;
+}
+.react-datepicker-popper {
+    z-index: 999 !important;
+}
+.react-datepicker__navigation{
+    display: none !important;
+}

@@ -63,6 +63,33 @@
   }
 }
 
+.appoinment-page form .react-datepicker__header {
+  background-color: transparent;
+}
+
+.appoinment-page form .react-datepicker-popper[data-placement^="top"] {
+  z-index: 99;
+}
+
+.appoinment-page form .react-datepicker__day--selected,
+.appoinment-page form .react-datepicker__day--in-selecting-range,
+.appoinment-page form .react-datepicker__day--in-range,
+.appoinment-page form .react-datepicker__month-text--selected,
+.appoinment-page form .react-datepicker__month-text--in-selecting-range,
+.appoinment-page form .react-datepicker__month-text--in-range,
+.appoinment-page form .react-datepicker__quarter-text--selected,
+.appoinment-page form .react-datepicker__quarter-text--in-selecting-range,
+.appoinment-page form .react-datepicker__quarter-text--in-range,
+.appoinment-page form .react-datepicker__year-text--selected,
+.appoinment-page form .react-datepicker__year-text--in-selecting-range,
+.appoinment-page form .react-datepicker__year-text--in-range,
+.appoinment-page form .react-datepicker__day--keyboard-selected,
+.appoinment-page form .react-datepicker__month-text--keyboard-selected,
+.appoinment-page form .react-datepicker__quarter-text--keyboard-selected,
+.appoinment-page form .react-datepicker__year-text--keyboard-selected {
+  background-color: var(--color-brown);
+}
+
 @media (max-width: 991px) {
   .appoinment-page form .button-area {
     margin-bottom: 2rem;

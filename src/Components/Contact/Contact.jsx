@@ -2,6 +2,7 @@ import React from "react";
 import HeadTitle from "../../Common/HeadTitle/HeadTitle";
 import "./Contact.scss";
 import ContactArea from "./ContactArea/ContactArea";
+import FormArea from "./FormArea/FormArea";
 export default function Contact() {
   return (
     <>
@@ -14,66 +15,7 @@ export default function Contact() {
                 <h6>Bize</h6>
                 <h3>Ulaşın</h3>
               </div>
-              <div class="form">
-                <form>
-                  <div class="row">
-                    <div class="col-lg-6 mb-3">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="İsim Soyisim"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="E - Mail"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Telefon"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Konu"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-12 mb-3">
-                      <div class="form-group">
-                        <textarea
-                          class="form-control"
-                          placeholder="Mesaj Yazın"
-                          rows="8"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="button-area">
-                      <button type="submit" class="button">
-                        Gönder
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
+              <FormArea />
             </div>
             <div class="col-lg-6 contact-info">
               <ContactArea />
