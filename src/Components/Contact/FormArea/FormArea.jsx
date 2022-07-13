@@ -125,8 +125,8 @@ export default function FormArea() {
                   )}
                 </div>
               </div>
-              <div class="button-area">
-                <button type="submit" class="button">
+              <div className="button-area">
+                <button type="submit" className="button">
                   Gönder
                 </button>
               </div>

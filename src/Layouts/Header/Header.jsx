@@ -3,8 +3,34 @@ import { useState } from "react";
 import "./Header.scss";
 import TopHeader from "./TopHeader/TopHeader";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
+import { useEffect } from "react";
+let componentMounted = true;
 export default function Header() {
+  const [active, setActive] = useState(-1);
+
+  const handleClick = (index) => {
+    if (index === active) setActive(-1);
+    else setActive(index);
+  };
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const response = await axios.get("http://localhost:3000/Menu");
+
+      if (componentMounted) {
+        setData(await response.data);
+        console.log(response.data);
+      }
+      return () => {
+        componentMounted = false;
+      };
+    };
+
+    getData();
+  }, []);
   const [image, setImage] = useState("/images/woman-patient-dentist-(2).jpg");
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,190 +74,74 @@ export default function Header() {
                 <img src="/images/logo.png" className="img-fluid" alt="logo" />
               </Link>
               <ul className="menu d-flex align-items-center justify-content-center">
-                <li className="nav-item">
-                  <Link className="nav-link active" to="/">
-                    Ana Sayfa
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="#" id="defaultDropdown">
-                    Kurumsal
-                  </Link>
-
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="defaultDropdown"
-                  >
-                    <li className="dropdown-item">
-                      <Link to="/about">Hakkımızda</Link>
+                {data.map((item, index) => {
+                  return (
+                    <li className="nav-item" key={index}>
+                      <Link
+                        className={`nav-link ${
+                          index === active ? "active" : ""
+                        }`}
+                        to={`/${item.Link}`}
+                        onClick={() => handleClick(index)}
+                      >
+                        {item.title}
+                      </Link>
+                      {item.subLinks ? (
+                        item.title === "Tedavilerimiz" ? (
+                          <ul
+                            className="dropdown-menu mega-menu"
+                            aria-labelledby="defaultDropdown"
+                          >
+                            <div className="row">
+                              <div className="col-lg-6 d-lg-block d-none">
+                                <div className="img-wrapper h-100">
+                                  <img
+                                    src={image}
+                                    className="img-fluid"
+                                    alt="/"
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-6">
+                                <ul className="sub-item">
+                                  {item.subLinks?.map((subItem) => {
+                                    return (
+                                      <li className="dropdown-item">
+                                        <Link
+                                          to={`/${subItem.Link}`}
+                                          onMouseEnter={handleMouseEnter(
+                                            `${subItem.image}`
+                                          )}
+                                        >
+                                          {subItem.title}
+                                        </Link>
+                                      </li>
+                                    );
+                                  })}
+                                </ul>
+                              </div>
+                            </div>
+                          </ul>
+                        ) : (
+                          <ul
+                            className="dropdown-menu"
+                            aria-labelledby="defaultDropdown"
+                          >
+                            {item.subLinks?.map((subItem) => {
+                              return (
+                                <li className="dropdown-item">
+                                  <Link to={`/${subItem.Link}`}>
+                                    {subItem.title}
+                                  </Link>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        )
+                      ) : null}
                     </li>
-                    <li className="dropdown-item">
-                      <Link to="/why-us">Neden Biz</Link>
-                    </li>
-                    <li className="dropdown-item">
-                      <Link to="/polyclinic">Polikliniğimiz</Link>
-                    </li>
-                    <li className="dropdown-item">
-                      <Link to="/human-resources">İnsan Kaynakları</Link>
-                    </li>
-                    <li className="dropdown-item">
-                      <Link to="/kvkk">KVKK</Link>
-                    </li>
-                  </ul>
-                </li>
-
-                <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    to="/services"
-                    id="defaultDropdown"
-                  >
-                    Tedavilerimiz
-                  </Link>
-                  <div
-                    className="dropdown-menu mega-menu"
-                    aria-labelledby="defaultDropdown"
-                  >
-                    <div className="row">
-                      <div className="col-lg-6 d-lg-block d-none">
-                        <div className="img-wrapper h-100">
-                          <img src={image} className="img-fluid" alt="" />
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <ul className="sub-item">
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/woman-patient-dentist.jpg"
-                            )}
-                          >
-                            <Link to="/before-after">Öncesi & Sonrası</Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/revealing-shot-empty-orthodontic-office.jpg"
-                            )}
-                          >
-                            <Link to="/">İmplant Diş</Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/woman-patient-dentist-(2).jpg"
-                            )}
-                          >
-                            <Link to="/#">Ortodonti</Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
-                            )}
-                          >
-                            <Link to="/#">Diş Temizliği </Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
-                            )}
-                          >
-                            <Link to="/#">Diş Temizliği </Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/revealing-shot-empty-orthodontic-office.jpg"
-                            )}
-                          >
-                            <Link to="/#">Sterilizasyon </Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/woman-patient-dentist-(2).jpg"
-                            )}
-                          >
-                            <Link to="/#">Porcelen Diş Teli </Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/woman-patient-dentist.jpg"
-                            )}
-                          >
-                            <Link to="/">Öncesi & Sonrası</Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/revealing-shot-empty-orthodontic-office.jpg"
-                            )}
-                          >
-                            <Link to="/">İmplant Diş</Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
-                            )}
-                          >
-                            <Link to="/#">Ortodonti</Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/woman-patient-dentist.jpg"
-                            )}
-                          >
-                            <Link to="/#">Diş Beyazlatma </Link>
-                          </li>
-
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/woman-patient-dentist-(2).jpg"
-                            )}
-                          >
-                            <Link to="/#">Diş Temizliği </Link>
-                          </li>
-                          <li
-                            className="dropdown-item"
-                            onMouseEnter={handleMouseEnter(
-                              "/images/revealing-shot-empty-orthodontic-office.jpg"
-                            )}
-                          >
-                            <Link to="/#">Sterilizasyon </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li className="nav-item">
-                  <Link className="nav-link" to="/doctors">
-                    Hekimlerimiz
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/blog">
-                    Blog
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link className="nav-link" to="/contact">
-                    İletişim
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/appoinment">
-                    Randevu Al
-                  </Link>
-                </li>
+                  );
+                })}
               </ul>
               <ul className="language-area-mobil d-flex d-lg-none">
                 <li>

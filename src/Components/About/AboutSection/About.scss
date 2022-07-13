@@ -59,6 +59,9 @@
             @include breakpoint(xl) {
                 max-width: 40rem;
             }
+            @include breakpoint(md){
+                max-width: 100%;
+            }
         }
     }
 

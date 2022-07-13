@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import HeadTitle from "../../../Common/HeadTitle/HeadTitle";
 import AboutSidebar from "../../../Layouts/AboutSidebar/AboutSidebar";
 import HomeDoctor from "../../Home/HomeDoctor/HomeDoctor";
+import { Link } from "react-router-dom";
 let componentMounted = true;
 
 export default function About() {
@@ -25,6 +26,7 @@ export default function About() {
     };
 
     getData();
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -65,30 +67,20 @@ export default function About() {
                 <img
                   src="./images/woman-patient-dentist.jpg"
                   className="img-fluid"
-                  alt=""
+                  alt="about"
                 />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="content d-flex justify-content-between flex-column h-100">
                 <div>
-                  <h3>
-                    Üst düzey hasta memnuniyeti ve kişiselleştirilmiş tedaviler
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit, rerum, commodi nemo maiores non earum velit suscipit
-                    id quas ducimus maxime veritatis est? Ut, facere
-                    exercitationem sapiente ducimus esse a voluptatem magnam.
-                    Provident recusandae doloremque veniam aliquid incidunt
-                    maiores. Tempore repellendus alias deserunt reiciendis error
-                    minus facere pariatur, voluptate illum.
-                  </p>
+                  <h3>{data.subTitle}</h3>
+                  <p>{data.subDescription}</p>
                 </div>
                 <div className="button-area">
-                  <a href="appoinment.html" className="button">
+                  <Link to="/appoinment" className="button">
                     Randevu Al
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

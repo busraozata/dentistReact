@@ -6,6 +6,7 @@ import axios from "axios";
 import HomeServices from "../../Home/HomeServices/HomeServices";
 import HomeDoctor from "../../Home/HomeDoctor/HomeDoctor";
 import DetailCard from "./DetailCard";
+
 export default function DoctorDetail() {
   const { id } = useParams();
   const [data, setData] = useState([]);
@@ -17,6 +18,7 @@ export default function DoctorDetail() {
       console.log(response.data);
     };
     getProduct();
+    window.scrollTo(0, 0);
   }, [id]);
   return (
     <>

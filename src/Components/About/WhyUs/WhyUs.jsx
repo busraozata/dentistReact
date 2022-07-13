@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import AboutBox from "../AboutBox/AboutBox";
 import HomeDoctor from "../../Home/HomeDoctor/HomeDoctor";
+import Parallax from "../Parallax/Parallax";
 let componentMounted = true;
 export default function WhyUs() {
   const [data, setData] = useState([]);
@@ -30,21 +31,22 @@ export default function WhyUs() {
     };
 
     getData();
+    window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
       <HeadTitle />
-      <section class="why-us">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
+      <section className="why-us">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3">
               <AboutSidebar />
             </div>
-            <div class="col-lg-9">
-              <div class="content">
+            <div className="col-lg-9">
+              <div className="content">
                 <h3>{data.title} </h3>
-                <div class="row">
+                <div className="row">
                   {Aboutdata.map((value, index) => {
                     return (
                       <div className="col-lg-6 col-md-6" key={index}>
@@ -59,40 +61,7 @@ export default function WhyUs() {
           </div>
         </div>
       </section>
-      <section
-        className="parallax d-flex justify-content-center"
-        style={{
-          backgroundImage: `url(${`./images/full-equiped-medical-cabinet.jpg`})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 mb-2">
-              <a href="contact-us.html">
-                <i className="fa-solid fa-circle-info"></i> Bize Sorun
-              </a>
-            </div>
-            <div className="col-lg-3 mb-2">
-              <a href="appoinment.html">
-                <i className="fa-solid fa-calendar-check"></i>Randevu Al
-              </a>
-            </div>
-            <div className="col-lg-3 mb-2">
-              <a href="services.html" class="button">
-                <i class="fa-solid fa-tooth"></i>Tedavilerimiz
-              </a>
-            </div>
-            <div className="col-lg-3 mb-2">
-              <a href="before-after.html">
-                <i className="fa-solid fa-face-grin-beam"></i> Öncesi & Sonrası
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Parallax />
       <HomeDoctor />
     </>
   );

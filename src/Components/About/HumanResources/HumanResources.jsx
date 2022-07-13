@@ -4,7 +4,30 @@ import AboutSidebar from "../../../Layouts/AboutSidebar/AboutSidebar";
 import HomeDoctor from "../../Home/HomeDoctor/HomeDoctor";
 import FormArea from "./Form/FormArea";
 import "./HumanResources.scss";
+import axios from "axios";
+import { useState } from "react";
+import { useEffect } from "react";
+let componentMounted = true;
+
 export default function HumanResources() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const response = await axios.get("http://localhost:3000/HumanResources");
+
+      if (componentMounted) {
+        setData(await response.data);
+        console.log(response.data);
+      }
+      return () => {
+        componentMounted = false;
+      };
+    };
+
+    getData();
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HeadTitle />
@@ -16,28 +39,8 @@ export default function HumanResources() {
             </div>
             <div className="col-lg-9">
               <div className="content">
-                <h2>İnsan Kaynakları</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-                  pariatur architecto iure, ipsa expedita hic tenetur iusto
-                  tempore optio, rerum dolor eos quo sunt! Amet officia animi
-                  harum error sit similique libero labore saepe ut eligendi qui
-                  itaque distinctio cum nobis hic culpa ad quas totam rem,
-                  fugiat numquam. Eius! Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Eaque neque tempore maiores reiciendis
-                  alias. Assumenda, doloribus cum. Exercitationem, adipisci
-                  porro. Soluta exercitationem sapiente ad quisquam odio,
-                  aspernatur ipsum fugit tempore? Culpa libero consequatur
-                  praesentium perferendis ullam nam amet voluptate dignissimos
-                  laudantium et sapiente, iusto tenetur maiores consequuntur
-                  eius mollitia molestias nemo? Magni, quos adipisci id
-                  explicabo excepturi quod a et minima cumque similique mollitia
-                  quaerat debitis error ex, quasi ratione culpa nihil amet
-                  dolore enim optio. Repudiandae blanditiis in aliquam dolor
-                  molestiae praesentium, nihil deleniti. Aliquam temporibus
-                  explicabo, doloribus natus veritatis, sit doloremque excepturi
-                  facilis eaque, nobis aperiam non recusandae?
-                </p>
+                <h2>{data.title}</h2>
+                <p>{data.description}</p>
               </div>
             </div>
           </div>

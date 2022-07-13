@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import ScrollTop from "./ScrollTop/ScrollTop";
 export default function Footer() {
   return (
     <>
@@ -243,6 +244,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
+      <ScrollTop />
     </>
   );
 }

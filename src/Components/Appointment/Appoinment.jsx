@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeadTitle from "../../Common/HeadTitle/HeadTitle";
 import ContactArea from "../Contact/ContactArea/ContactArea";
 import HomeDoctor from "../Home/HomeDoctor/HomeDoctor";
 import "./Appoinment.scss";
 import FormArea from "./Form/FormArea";
 export default function Appoinment() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <HeadTitle />

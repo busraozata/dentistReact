@@ -102,6 +102,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .parallax .img-wrapper img {
+    max-width: 100%;
+  }
+}
+
 .parallax h3 {
   color: var(--color-white);
   font-size: 2rem;

@@ -1,41 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeadTitle from "../../Common/HeadTitle/HeadTitle";
 import "./Contact.scss";
 import ContactArea from "./ContactArea/ContactArea";
 import FormArea from "./FormArea/FormArea";
+import MapArea from "./Map/Map";
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HeadTitle />
-      <section class="contact-page">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="title">
+      <section className="contact-page">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="title">
                 <h6>Bize</h6>
                 <h3>Ulaşın</h3>
               </div>
               <FormArea />
             </div>
-            <div class="col-lg-6 contact-info">
+            <div className="col-lg-6 contact-info">
               <ContactArea />
             </div>
           </div>
         </div>
       </section>
-      <section class="map">
-        <iframe
-          title="Wucize"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.0864253127293!2d28.870207015661308!3d40.97958832913813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabd671f7391b7%3A0x9f90d1a19c5df6d2!2zV3VjaXplIHwgV2ViIFRhc2FyxLFtICwgw5xyw7xuIEZvdG_En3JhZiDDh2VraW1pLCBUYW7EsXTEsW0gRmlsbWk!5e0!3m2!1str!2str!4v1654152514006!5m2!1str!2str"
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          aria-hidden="false"
-          tabIndex="0"
-        />
-      </section>
+      <MapArea />
     </>
   );
 }

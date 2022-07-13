@@ -23,6 +23,7 @@ export default function Kvkk() {
     };
 
     getData();
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>

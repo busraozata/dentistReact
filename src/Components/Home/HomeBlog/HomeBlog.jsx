@@ -85,12 +85,19 @@ export default function HomeBlog() {
                     <div className="card-body d-flex flex-column justify-content-between">
                       <div>
                         <h5 className="card-title">
-                          <a href="blog-detail.html">{slide.title}</a>
+                          <Link to={`/blog-detail/${slide.id}`}>
+                            {slide.title}
+                          </Link>
                         </h5>
-                        <p className="card-text">{slide.description.substring(0, 90)}...</p>
+                        <p className="card-text">
+                          {slide.description.substring(0, 90)}...
+                        </p>
                       </div>
                       <div className="button-area">
-                        <Link to={`/blog-detail/${slide.id}`} className="button">
+                        <Link
+                          to={`/blog-detail/${slide.id}`}
+                          className="button"
+                        >
                           <span> Daha Fazlası </span>
                           <i className="fa-solid fa-chevron-right"></i>
                         </Link>

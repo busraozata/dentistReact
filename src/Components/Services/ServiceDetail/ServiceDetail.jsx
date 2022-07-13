@@ -19,6 +19,7 @@ export default function ServiceDetail() {
       console.log(response.data);
     };
     getProduct();
+    window.scrollTo(0, 0);
   }, [id]);
 
   return (

@@ -21,7 +21,7 @@ export default function DetailCard(props) {
         data-fancybox="gallery"
         data-src={props.images}
       >
-        <div className="img-wrapper">
+        <div className="img-wrapper-gallery">
           <img src={props.images} className="gallery-item" alt="" />
         </div>
       </div>

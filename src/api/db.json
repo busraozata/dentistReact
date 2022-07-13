@@ -3,72 +3,144 @@
     {
       "id": 1,
       "title": "Ana Sayfa",
-      "Link": "/"
+      "Link": ""
     },
     {
       "id": 2,
       "title": "Kurumsal",
-      "Link": "#",
-      "SubLinks": [
+      "Link": "about",
+      "subLinks": [
         {
           "id": 1,
           "title": "Hakkımızda",
-          "Link": "/about"
+          "Link": "about"
         },
         {
           "id": 2,
           "title": "Neden Biz",
-          "Link": "/why-us"
+          "Link": "why-us"
         },
         {
           "id": 3,
           "title": "Polikliniğimiz",
-          "Link": "/polyclinic"
+          "Link": "polyclinic"
         },
         {
           "id": 4,
           "title": "İnsan Kaynakları",
-          "Link": "/human-resources"
+          "Link": "human-resources"
         },
         {
           "id": 5,
           "title": "KVKK",
-          "Link": "/kvkk"
+          "Link": "kvkk"
         }
       ]
     },
     {
+      "id": 4,
+      "title": "Hekimlerimiz",
+      "Link": "doctors"
+    },
+    {
       "id": 3,
       "title": "Tedavilerimiz",
-      "Link": "#",
-      "SubLinks": [
+      "Link": "services",
+      "subLinks": [
         {
           "id": 1,
           "title": "Öncesi & Sonrası",
-          "Link": "/"
+          "Link": "before-after",
+          "image": "/images/woman-patient-dentist.jpg"
         },
         {
           "id": 2,
-          "title": "Genel Diş Hekimliği",
-          "Link": "/services-detail/1",
-          "image": "./images/artificial-jaw-dentist-s-office.jpg"
+          "title": "İmplant Diş",
+          "Link": "service-detail/1",
+          "image": "/images/revealing-shot-empty-orthodontic-office.jpg"
         },
         {
           "id": 3,
           "title": "Polikliniğimiz",
-          "Link": "/polyclinic"
+          "Link": "service-detail/2",
+          "image": "/images/woman-patient-dentist-(2).jpg"
         },
         {
           "id": 4,
-          "title": "İnsan Kaynakları",
-          "Link": "/human-resources"
+          "title": "Ortodonti",
+          "Link": "service-detail/3",
+          "image": "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
         },
         {
           "id": 5,
-          "title": "KVKK",
-          "Link": "/kvkk"
+          "title": "Diş Temizliği",
+          "Link": "service-detail/4",
+          "image": "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+        },
+        {
+          "id": 6,
+          "title": "Diş Temizliği",
+          "Link": "service-detail/5",
+          "image": "/images/revealing-shot-empty-orthodontic-office.jpg"
+        },
+        {
+          "id": 7,
+          "title": "Sterilizasyon",
+          "Link": "service-detail/6",
+          "image": "/images/woman-patient-dentist-(2).jpg"
+        },
+        {
+          "id": 8,
+          "title": "Porcelen Diş Teli",
+          "Link": "service-detail/7",
+          "image": "/images/woman-patient-dentist.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Ortodonti",
+          "Link": "service-detail/3",
+          "image": "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+        },
+        {
+          "id": 10,
+          "title": "Diş Temizliği",
+          "Link": "service-detail/4",
+          "image": "/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+        },
+        {
+          "id": 11,
+          "title": "Diş Temizliği",
+          "Link": "service-detail/5",
+          "image": "/images/revealing-shot-empty-orthodontic-office.jpg"
+        },
+        {
+          "id": 12,
+          "title": "Sterilizasyon",
+          "Link": "service-detail/6",
+          "image": "/images/woman-patient-dentist-(2).jpg"
+        },
+        {
+          "id": 13,
+          "title": "Porcelen Diş Teli",
+          "Link": "service-detail/7",
+          "image": "/images/woman-patient-dentist.jpg"
         }
       ]
+    },
+    {
+      "id": 4,
+      "title": "Blog",
+      "Link": "blog"
+    },
+    {
+      "id": 5,
+      "title": "İletişim",
+      "Link": "contact"
+    },
+    {
+      "id": 6,
+      "title": "Randevu Al",
+      "Link": "appoinment"
     }
   ],
   "bannerSlider": [
@@ -96,7 +168,9 @@
     "aboutTitle": "Hakkımızda",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga pariatur architecto iure, ipsa expedita hic tenetur iusto tempore optio, rerum dolor eos quo sunt! Amet officia animi harum error sit similique libero labore saepe ut eligendi qui itaque distinctio cum nobis hic culpa ad quas totam rem, fugiat numquam. Eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque neque tempore maiores reiciendis alias. Assumenda, doloribus cum. Exercitationem, adipisci porro. Soluta exercitationem sapiente ad quisquam odio, aspernatur ipsum fugit tempore? Culpa libero consequatur praesentium perferendis ullam nam amet voluptate dignissimos laudantium et sapiente, iusto tenetur maiores consequuntur eius mollitia molestias nemo? Magni, quos adipisci id explicabo excepturi quod a et minima cumque similique mollitia quaerat debitis error ex, quasi ratione culpa nihil amet dolore enim optio. Repudiandae blanditiis in aliquam dolor molestiae praesentium, nihil deleniti. Aliquam temporibus explicabo, doloribus natus veritatis, sit doloremque excepturi facilis eaque, nobis aperiam non recusandae?",
     "missionTitle": "Vizyon & Misyon",
-    "desc2": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, placeat tempora! Facilis recusandae inventore voluptate minus commodi. Doloremque odit nesciunt asperiores modi repellat quia, explicabo quo! Quos illum rem quisquam! Earum perferendis tenetur consectetur a recusandae quae praesentium porro culpa laborum necessitatibus blanditiis pariatur facere similique cum optio nesciunt ipsum accusamus cupiditate, aperiam fuga tempore consequatur non quos at. Quas aperiam ut perspiciatis? Quis deleniti perferendis et? Nobis maiores in voluptate vel eligendi exercitationem tempora dolor laudantium veritatis enim iure, praesentium sequi iusto voluptates id tenetur fugit accusantium aut quibusdam qui nesciunt. Magnam vero maiores odio voluptates, odit dignissimos officiis?"
+    "desc2": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, placeat tempora! Facilis recusandae inventore voluptate minus commodi. Doloremque odit nesciunt asperiores modi repellat quia, explicabo quo! Quos illum rem quisquam! Earum perferendis tenetur consectetur a recusandae quae praesentium porro culpa laborum necessitatibus blanditiis pariatur facere similique cum optio nesciunt ipsum accusamus cupiditate, aperiam fuga tempore consequatur non quos at. Quas aperiam ut perspiciatis? Quis deleniti perferendis et? Nobis maiores in voluptate vel eligendi exercitationem tempora dolor laudantium veritatis enim iure, praesentium sequi iusto voluptates id tenetur fugit accusantium aut quibusdam qui nesciunt. Magnam vero maiores odio voluptates, odit dignissimos officiis?",
+    "subTitle": "Üst düzey hasta memnuniyeti ve kişiselleştirilmiş tedaviler",
+    "subDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, rerum, commodi nemo maiores non earum velit suscipit id quas ducimus maxime veritatis est? Ut, facere exercitationem sapiente ducimus esse a voluptatem magnam. Provident recusandae doloremque veniam aliquid incidunt maiores. Tempore repellendus alias deserunt reiciendis error minus facere pariatur, voluptate illum."
   },
   "WhyUs": {
     "id": 1,
@@ -840,6 +914,11 @@
       "message": "Voluptates est itaqu"
     }
   ],
+  "HumanResources": {
+    "id": 1,
+    "title": "İnsan Kaynakları",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga pariatur architecto iure, ipsa expedita hic tenetur iusto tempore optio, rerum dolor eos quo sunt! Amet officia animi harum error sit similique libero labore saepe ut eligendi qui itaque distinctio cum nobis hic culpa ad quas totam rem, fugiat numquam. Eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque neque tempore maiores reiciendis alias. Assumenda, doloribus cum. Exercitationem, adipisci porro. Soluta exercitationem sapiente ad quisquam odio, aspernatur ipsum fugit tempore? Culpa libero consequatur praesentium perferendis ullam nam amet voluptate dignissimos laudantium et sapiente, iusto tenetur maiores consequuntur eius mollitia molestias nemo? Magni, quos adipisci id explicabo excepturi quod a et minima cumque similique mollitia quaerat debitis error ex, quasi ratione culpa nihil amet dolore enim optio. Repudiandae blanditiis in aliquam dolor molestiae praesentium, nihil deleniti. Aliquam temporibus explicabo, doloribus natus veritatis, sit doloremque excepturi facilis eaque, nobis aperiam non recusandae?"
+  },
   "HumanResourcesData": [
     {
       "id": 1,
@@ -880,6 +959,14 @@
       "phone": "(196) 148 31 86",
       "email": "gowo@mailinator.com",
       "message": "Dolore doloremque ve"
+    },
+    {
+      "id": 6,
+      "fullName": "Cherokee Wells",
+      "subject": "Qui ut velit ea aute",
+      "phone": "(134) 788 24 14",
+      "email": "fifupufutu@mailinator.com",
+      "message": "Aut est nostrud cons"
     }
   ],
   "ContactData": [
@@ -910,6 +997,16 @@
       "date": "2034-12-20",
       "gender": "Kadın",
       "department": "Kozmetik diş hekimliği"
+    },
+    {
+      "id": 2,
+      "fullName": "Audrey Dejesus",
+      "phone": "(186) 563 14 00",
+      "email": "vohuni@mailinator.com",
+      "message": "Quia quia omnis ut d",
+      "date": "2069-11-14",
+      "gender": "Erkek",
+      "department": "Bölüm Seçiniz"
     }
   ]
 }

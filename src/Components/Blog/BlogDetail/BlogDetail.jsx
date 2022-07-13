@@ -15,34 +15,35 @@ export default function BlogDetail() {
       console.log(response.data);
     };
     getProduct();
+    window.scrollTo(0, 0);
   }, [id]);
   return (
     <>
       <HeadTitle />
-      <section class="blog-detail">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-8 col-lg-9">
-              <div class="blog-details-image">
+      <section className="blog-detail">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-8 col-lg-9">
+              <div className="blog-details-image">
                 <img
                   src={data.image2}
-                  class="img-fluid w-100"
+                  className="img-fluid w-100"
                   alt={data.title}
                 />
               </div>
-              <div class="blog-details-content">
-                <h3 class="mt-4">{data.title}</h3>
+              <div className="blog-details-content">
+                <h3 className="mt-4">{data.title}</h3>
                 <p>{data.description}</p>
                 <p>{data.description}</p>
                 <p>{data.description}</p>
               </div>
             </div>
-            <div class="col-xl-4">
+            <div className="col-xl-4">
               <LastPosts />
 
-              <div class="populer-tags mt-4">
-                <h3 class="mb-3">Popüler Taglar</h3>
-                <div class="tagcloud">
+              <div className="populer-tags mt-4">
+                <h3 className="mb-3">Popüler Taglar</h3>
+                <div className="tagcloud">
                   {data.tags?.map((item) => {
                     return (
                       <Link to="#" key={item.id}>

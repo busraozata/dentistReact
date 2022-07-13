@@ -62,16 +62,16 @@
   }
 }
 
-.doctors-detail .img-wrapper {
+.doctors-detail .img-wrapper-gallery {
   cursor: pointer;
   position: relative;
 }
 
-.doctors-detail .img-wrapper:hover::before {
+.doctors-detail .img-wrapper-gallery:hover::before {
   height: 100%;
 }
 
-.doctors-detail .img-wrapper::before {
+.doctors-detail .img-wrapper-gallery::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.555);
   position: absolute;

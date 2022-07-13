@@ -17,6 +17,7 @@ import Doctors from "./Components/Doctors/DoctorsSection/Doctors";
 import Contact from "./Components/Contact/Contact";
 import Appoinment from "./Components/Appointment/Appoinment";
 import BeforeAfter from "./Components/Before-after/BeforeAfter";
+import Page404 from "./Common/Page404/Page404";
 
 function App() {
   return (
@@ -43,6 +44,8 @@ function App() {
         <Route path="/appoinment" element={<Appoinment />} />
 
         <Route path="/before-after" element={<BeforeAfter />} />
+
+        <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer />
     </>

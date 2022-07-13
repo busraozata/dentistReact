@@ -49,7 +49,7 @@ header {
                     object-fit: cover;
 
                     @include breakpoint(lg) {
-                        max-width: 10rem ;
+                        max-width: 10rem;
                     }
                 }
 
@@ -135,6 +135,14 @@ header {
 
                             &.active {
                                 color: var(--color-light-blue);
+                            }
+
+                            @media screen and(min-width:1024px) {
+                                &:last-child {
+                                    &.active {
+                                        color: var(--color-white);
+                                    }
+                                }
                             }
                         }
 

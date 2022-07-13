@@ -84,7 +84,7 @@ export default function HomeServices() {
                         </div>
                       </div>
                       <div className="button-area">
-                        <Link to="/#" className="button">
+                        <Link to={`/service-detail/${slide.id}`} className="button">
                           Randevu Al
                         </Link>
                       </div>

@@ -25,6 +25,7 @@ export default function Doctors() {
     };
 
     getData();
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>

@@ -161,6 +161,12 @@ header .header-inner .header-area .menu-area ul .nav-item a.active {
   color: var(--color-light-blue);
 }
 
+@media screen and (min-width: 1024px) {
+  header .header-inner .header-area .menu-area ul .nav-item a:last-child.active {
+    color: var(--color-white);
+  }
+}
+
 header .header-inner .header-area .menu-area ul .nav-item .dropdown-menu {
   min-width: 15rem;
   padding: 1rem !important;

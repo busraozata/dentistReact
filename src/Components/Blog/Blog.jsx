@@ -24,6 +24,7 @@ export default function Blog() {
     };
 
     getData();
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
