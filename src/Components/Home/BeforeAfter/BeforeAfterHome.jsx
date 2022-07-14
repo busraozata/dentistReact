@@ -4,6 +4,7 @@ import { ComparisonSlider } from "react-comparison-slider";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 let componentMounted = true;
 export default function BeforeAfterHome() {
   const [data, setData] = useState([]);
@@ -33,9 +34,9 @@ export default function BeforeAfterHome() {
               <h3>Gülüşünüzde Fark Yaratın</h3>
             </div>
             <div className="button-area">
-              <a href="before-after.html" className="button">
+              <Link to="/before-after" className="button">
                 Devamını Gör
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -44,7 +45,7 @@ export default function BeforeAfterHome() {
               index < 2 && (
                 <div className="col-lg-6 col-md-6 mb-3" key={index}>
                   <ComparisonSlider
-                    defaultValue={50}
+                    defaultValue={50} //Çizginin ortada olmasını sağlıyor
                     itemOne={
                       <div
                         style={{

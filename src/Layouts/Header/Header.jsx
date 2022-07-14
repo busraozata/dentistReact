@@ -7,16 +7,20 @@ import axios from "axios";
 import { useEffect } from "react";
 let componentMounted = true;
 export default function Header() {
-  const [active, setActive] = useState(-1);
+  const [active, setActive] = useState(-1); //Active , Pasive
+  const [data, setData] = useState([]); //Get Data
+
+  const [menuOpen, setMenuOpen] = useState(false); //Menu open, close
+  const [isScrolled, setIsScrolled] = useState(false); //Header scroll
+  const [image, setImage] = useState("/images/woman-patient-dentist-(2).jpg"); //header change image
 
   const handleClick = (index) => {
     if (index === active) setActive(-1);
     else setActive(index);
   };
 
-  const [data, setData] = useState([]);
-
   useEffect(() => {
+    // bu callback fonksiyon bileşen(component) her render edildikten sonra çağrılıyor(invoke) ediliyor.
     const getData = async () => {
       const response = await axios.get("http://localhost:3000/Menu");
 
@@ -30,14 +34,14 @@ export default function Header() {
     };
 
     getData();
-  }, []);
-  const [image, setImage] = useState("/images/woman-patient-dentist-(2).jpg");
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  }, []); //loop'a dönmesin diye boş bir array tanımladım.
+
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
     return () => (window.onscroll = null);
   };
+
+  //Click open , close menu
   const handleMenuToggle = () => {
     setMenuOpen((p) => !p);
   };
@@ -77,17 +81,21 @@ export default function Header() {
                 {data.map((item, index) => {
                   return (
                     <li className="nav-item" key={index}>
+                      {/* key verilerek index numaraları tanımlanıyor */}
                       <Link
                         className={`nav-link ${
                           index === active ? "active" : ""
-                        }`}
-                        to={`/${item.Link}`}
-                        onClick={() => handleClick(index)}
+                        }`} 
+                        to={`/${item.Link}`} //ilgili linke aktarım sağlanıyor.
+                        onClick={() =>{
+                          handleClick(index)
+                          handleMenuToggle()
+                        } }
                       >
                         {item.title}
                       </Link>
-                      {item.subLinks ? (
-                        item.title === "Tedavilerimiz" ? (
+                      {item.subLinks ? ( // Menudeki alanın alt menüsü varsa
+                        item.title === "Tedavilerimiz" ? ( //title'i Tedavilerimiz ise burası
                           <ul
                             className="dropdown-menu mega-menu"
                             aria-labelledby="defaultDropdown"
@@ -104,9 +112,9 @@ export default function Header() {
                               </div>
                               <div className="col-lg-6">
                                 <ul className="sub-item">
-                                  {item.subLinks?.map((subItem) => {
+                                  {item.subLinks?.map((subItem, index) => {
                                     return (
-                                      <li className="dropdown-item">
+                                      <li className="dropdown-item" key={index}>
                                         <Link
                                           to={`/${subItem.Link}`}
                                           onMouseEnter={handleMouseEnter(
@@ -123,13 +131,14 @@ export default function Header() {
                             </div>
                           </ul>
                         ) : (
+                          //Değilse Burası
                           <ul
                             className="dropdown-menu"
                             aria-labelledby="defaultDropdown"
                           >
-                            {item.subLinks?.map((subItem) => {
+                            {item.subLinks?.map((subItem, index) => {
                               return (
-                                <li className="dropdown-item">
+                                <li className="dropdown-item" key={index}>
                                   <Link to={`/${subItem.Link}`}>
                                     {subItem.title}
                                   </Link>

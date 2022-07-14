@@ -22,7 +22,10 @@ export default function DoctorDetail() {
   }, [id]);
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title={`${data.name}`.toLocaleLowerCase()}
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="doctors-detail">
         <div className="container">
           <div className="row">

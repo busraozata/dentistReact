@@ -27,7 +27,10 @@ export default function Kvkk() {
   }, []);
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="KVKK"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="kvkk">
         <div className="container">
           <div className="row">

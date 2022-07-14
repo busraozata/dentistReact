@@ -36,7 +36,10 @@ export default function WhyUs() {
 
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="Neden Biz ?"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="why-us">
         <div className="container">
           <div className="row">

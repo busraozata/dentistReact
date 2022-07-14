@@ -28,7 +28,10 @@ export default function Services() {
   }, []);
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="Tedavilerimiz"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="services-page">
         <div className="container">
           <div className="row">

@@ -30,7 +30,10 @@ export default function HumanResources() {
   }, []);
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="İnsan Kaynakları"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="human-resources">
         <div className="container">
           <div className="row">

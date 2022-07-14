@@ -31,7 +31,10 @@ export default function About() {
 
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="Hakkımızda"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="about-page">
         <div className="container">
           <div className="row">

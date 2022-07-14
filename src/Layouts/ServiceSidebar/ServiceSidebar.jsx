@@ -27,6 +27,9 @@ export default function ServiceSidebar() {
     <>
       <div className="sidebar">
         <ul>
+          <li>
+            <Link to="/before-after">Before & After</Link>
+          </li>
           {sidebarData.map((item, index) => {
             return (
               <li key={index}>

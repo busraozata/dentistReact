@@ -29,7 +29,10 @@ export default function Doctors() {
   }, []);
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="Doktorlarımız"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="doctors-page">
         <div className="container">
           <div className="row">

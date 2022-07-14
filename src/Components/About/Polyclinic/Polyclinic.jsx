@@ -31,7 +31,10 @@ export default function Polyclinic() {
   }, []);
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="Poliklinik"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="polyclinic">
         <div className="container">
           <div className="row">

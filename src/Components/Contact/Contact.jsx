@@ -10,7 +10,10 @@ export default function Contact() {
   }, []);
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="İletişim"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="contact-page">
         <div className="container">
           <div className="row">

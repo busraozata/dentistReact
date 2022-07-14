@@ -19,7 +19,10 @@ export default function BlogDetail() {
   }, [id]);
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="Blog"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="blog-detail">
         <div className="container">
           <div className="row">

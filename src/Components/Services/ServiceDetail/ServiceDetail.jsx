@@ -24,7 +24,10 @@ export default function ServiceDetail() {
 
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title={`${data.bigTitle}`}
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section className="service-detail">
         <div className="container">
           <div className="row">

@@ -7,7 +7,7 @@ export default function Page404() {
 
   return (
     <>
-      <HeadTitle />
+      <HeadTitle title="404" />
       <section
         className="d-flex align-items-center justify-content-center"
         style={{ minHeight: "40vh", width: "100%" }}

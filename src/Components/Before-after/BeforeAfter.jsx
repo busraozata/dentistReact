@@ -28,7 +28,10 @@ export default function BeforeAfter() {
   }, []);
   return (
     <>
-      <HeadTitle />
+      <HeadTitle
+        title="Öncesi - Sonrası"
+        image="/images/interior-empty-modern-stomatology-orthodontic-hospital-bright-office.jpg"
+      />
       <section class="before-after-page">
         <div class="container">
           <div class="row">
